@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		8327F7D41036EE3A00CA95EC /* Default.psd in Resources */ = {isa = PBXBuildFile; fileRef = 8327F7C31036EE3A00CA95EC /* Default.psd */; };
+		8327F7DE1036EE3A00CA95EC /* Icon-Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 8327F7CD1036EE3A00CA95EC /* Icon-Settings.png */; };
+		8327F7DF1036EE3A00CA95EC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8327F7CE1036EE3A00CA95EC /* icon.png */; };
+		8327F7E01036EE3A00CA95EC /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 8327F7CF1036EE3A00CA95EC /* icon.psd */; };
+		8327F7E11036EE3A00CA95EC /* Todoist.ai in Resources */ = {isa = PBXBuildFile; fileRef = 8327F7D01036EE3A00CA95EC /* Todoist.ai */; };
+		8327F7E21036EE3A00CA95EC /* Todoist.png in Resources */ = {isa = PBXBuildFile; fileRef = 8327F7D11036EE3A00CA95EC /* Todoist.png */; };
+		8327F8491036FAB100CA95EC /* TodoistAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327F8451036FAB100CA95EC /* TodoistAppDelegate.m */; };
+		8327F84A1036FAB100CA95EC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327F8471036FAB100CA95EC /* RootViewController.m */; };
+		8327F9951037129D00CA95EC /* SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327F9931037129D00CA95EC /* SplashScreen.m */; };
+		8327F9961037129D00CA95EC /* SplashScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8327F9941037129D00CA95EC /* SplashScreen.xib */; };
+		8327FA0E1037431F00CA95EC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8327FA0D1037431F00CA95EC /* Default.png */; };
+		8327FA221037457800CA95EC /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 8327FA211037457800CA95EC /* Title.png */; };
+		8327FA4C1037472400CA95EC /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327FA4B1037472400CA95EC /* ItemListViewController.m */; };
+		8327FA6B103751C200CA95EC /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 8327FA6A103751C200CA95EC /* overlay.png */; };
+		8327FACF10375AE400CA95EC /* XActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327FACE10375AE400CA95EC /* XActivityIndicator.m */; };
+		83302D5310382A8E00E10BA6 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 83302D4810382A8E00E10BA6 /* NSObject+SBJSON.m */; };
+		83302D5410382A8E00E10BA6 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 83302D4A10382A8E00E10BA6 /* NSString+SBJSON.m */; };
+		83302D5510382A8E00E10BA6 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 83302D4B10382A8E00E10BA6 /* SBJSON.m */; };
+		83302D5610382A8E00E10BA6 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 83302D4D10382A8E00E10BA6 /* SBJsonBase.m */; };
+		83302D5710382A8E00E10BA6 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 83302D4F10382A8E00E10BA6 /* SBJsonParser.m */; };
+		83302D5810382A8E00E10BA6 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83302D5110382A8E00E10BA6 /* SBJsonWriter.m */; };
+		83370ACD1035C971009898A8 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83370AC11035C971009898A8 /* DataModel.m */; };
+		83370ACE1035C971009898A8 /* DMUserDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 83370AC21035C971009898A8 /* DMUserDetails.m */; };
+		83370ACF1035C971009898A8 /* DMTaskItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83370AC41035C971009898A8 /* DMTaskItem.m */; };
+		83370AD01035C971009898A8 /* DMProjectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83370AC61035C971009898A8 /* DMProjectItem.m */; };
+		83370AD11035C971009898A8 /* DMLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83370AC81035C971009898A8 /* DMLabelItem.m */; };
+		8378BC6D103886850075A580 /* XTableViewCellBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BC6C103886850075A580 /* XTableViewCellBase.m */; };
+		8378BC70103887150075A580 /* ProjectItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BC6F103887150075A580 /* ProjectItemTableViewCell.m */; };
+		8378BC73103889480075A580 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BC72103889480075A580 /* UIColor+Hex.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8327F8911036FE9700CA95EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Todoist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* Todoist_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todoist_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8327F7B11036ED6E00CA95EC /* XLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLogging.h; sourceTree = "<group>"; };
+		8327F7C31036EE3A00CA95EC /* Default.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Default.psd; sourceTree = "<group>"; };
+		8327F7CD1036EE3A00CA95EC /* Icon-Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Settings.png"; sourceTree = "<group>"; };
+		8327F7CE1036EE3A00CA95EC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8327F7CF1036EE3A00CA95EC /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.psd; sourceTree = "<group>"; };
+		8327F7D01036EE3A00CA95EC /* Todoist.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Todoist.ai; sourceTree = "<group>"; };
+		8327F7D11036EE3A00CA95EC /* Todoist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Todoist.png; sourceTree = "<group>"; };
+		8327F8451036FAB100CA95EC /* TodoistAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoistAppDelegate.m; sourceTree = "<group>"; };
+		8327F8461036FAB100CA95EC /* TodoistAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoistAppDelegate.h; sourceTree = "<group>"; };
+		8327F8471036FAB100CA95EC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		8327F8481036FAB100CA95EC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		8327F9921037129D00CA95EC /* SplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreen.h; sourceTree = "<group>"; };
+		8327F9931037129D00CA95EC /* SplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreen.m; sourceTree = "<group>"; };
+		8327F9941037129D00CA95EC /* SplashScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreen.xib; sourceTree = "<group>"; };
+		8327FA0D1037431F00CA95EC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8327FA211037457800CA95EC /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
+		8327FA4A1037472400CA95EC /* ItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListViewController.h; sourceTree = "<group>"; };
+		8327FA4B1037472400CA95EC /* ItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListViewController.m; sourceTree = "<group>"; };
+		8327FA6A103751C200CA95EC /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
+		8327FACD10375AE400CA95EC /* XActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XActivityIndicator.h; sourceTree = "<group>"; };
+		8327FACE10375AE400CA95EC /* XActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XActivityIndicator.m; sourceTree = "<group>"; };
+		83302D4610382A8E00E10BA6 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = JSON/JSON.h; sourceTree = "<group>"; };
+		83302D4710382A8E00E10BA6 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "JSON/NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		83302D4810382A8E00E10BA6 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "JSON/NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		83302D4910382A8E00E10BA6 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "JSON/NSString+SBJSON.h"; sourceTree = "<group>"; };
+		83302D4A10382A8E00E10BA6 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "JSON/NSString+SBJSON.m"; sourceTree = "<group>"; };
+		83302D4B10382A8E00E10BA6 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJSON.m; path = JSON/SBJSON.m; sourceTree = "<group>"; };
+		83302D4C10382A8E00E10BA6 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = JSON/SBJsonBase.h; sourceTree = "<group>"; };
+		83302D4D10382A8E00E10BA6 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = JSON/SBJsonBase.m; sourceTree = "<group>"; };
+		83302D4E10382A8E00E10BA6 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = JSON/SBJsonParser.h; sourceTree = "<group>"; };
+		83302D4F10382A8E00E10BA6 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = JSON/SBJsonParser.m; sourceTree = "<group>"; };
+		83302D5010382A8E00E10BA6 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = JSON/SBJsonWriter.h; sourceTree = "<group>"; };
+		83302D5110382A8E00E10BA6 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = JSON/SBJsonWriter.m; sourceTree = "<group>"; };
+		83302D5210382A8E00E10BA6 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJSON.h; path = JSON/SBJSON.h; sourceTree = "<group>"; };
+		83370AC11035C971009898A8 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		83370AC21035C971009898A8 /* DMUserDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMUserDetails.m; sourceTree = "<group>"; };
+		83370AC31035C971009898A8 /* DMUserDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUserDetails.h; sourceTree = "<group>"; };
+		83370AC41035C971009898A8 /* DMTaskItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTaskItem.m; sourceTree = "<group>"; };
+		83370AC51035C971009898A8 /* DMTaskItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTaskItem.h; sourceTree = "<group>"; };
+		83370AC61035C971009898A8 /* DMProjectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMProjectItem.m; sourceTree = "<group>"; };
+		83370AC71035C971009898A8 /* DMProjectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMProjectItem.h; sourceTree = "<group>"; };
+		83370AC81035C971009898A8 /* DMLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLabelItem.m; sourceTree = "<group>"; };
+		83370AC91035C971009898A8 /* DMLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLabelItem.h; sourceTree = "<group>"; };
+		83370ACC1035C971009898A8 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		8378BC6B103886850075A580 /* XTableViewCellBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTableViewCellBase.h; sourceTree = "<group>"; };
+		8378BC6C103886850075A580 /* XTableViewCellBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTableViewCellBase.m; sourceTree = "<group>"; };
+		8378BC6E103887150075A580 /* ProjectItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectItemTableViewCell.h; sourceTree = "<group>"; };
+		8378BC6F103887150075A580 /* ProjectItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectItemTableViewCell.m; sourceTree = "<group>"; };
+		8378BC71103889480075A580 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		8378BC72103889480075A580 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Todoist-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Todoist-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Todoist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				8327F8FC1037031100CA95EC /* JSON */,
+				8327F8411036FA9F00CA95EC /* Classes */,
+				8327F7C01036EE3A00CA95EC /* Images */,
+				83370ABD1035C965009898A8 /* Model */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8378BC71103889480075A580 /* UIColor+Hex.h */,
+				8378BC72103889480075A580 /* UIColor+Hex.m */,
+				8327F7B11036ED6E00CA95EC /* XLogging.h */,
+				28A0AAE50D9B0CCF005BE974 /* Todoist_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8327FA211037457800CA95EC /* Title.png */,
+				8327FA0D1037431F00CA95EC /* Default.png */,
+				8327F9941037129D00CA95EC /* SplashScreen.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Todoist-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8327F7C01036EE3A00CA95EC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8327FA6A103751C200CA95EC /* overlay.png */,
+				8327F7C31036EE3A00CA95EC /* Default.psd */,
+				8327F7CD1036EE3A00CA95EC /* Icon-Settings.png */,
+				8327F7CE1036EE3A00CA95EC /* icon.png */,
+				8327F7CF1036EE3A00CA95EC /* icon.psd */,
+				8327F7D01036EE3A00CA95EC /* Todoist.ai */,
+				8327F7D11036EE3A00CA95EC /* Todoist.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8327F8411036FA9F00CA95EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8327FA4A1037472400CA95EC /* ItemListViewController.h */,
+				8327FA4B1037472400CA95EC /* ItemListViewController.m */,
+				8378BC6E103887150075A580 /* ProjectItemTableViewCell.h */,
+				8378BC6F103887150075A580 /* ProjectItemTableViewCell.m */,
+				8327F8481036FAB100CA95EC /* RootViewController.h */,
+				8327F8471036FAB100CA95EC /* RootViewController.m */,
+				8327F9921037129D00CA95EC /* SplashScreen.h */,
+				8327F9931037129D00CA95EC /* SplashScreen.m */,
+				8327F8461036FAB100CA95EC /* TodoistAppDelegate.h */,
+				8327F8451036FAB100CA95EC /* TodoistAppDelegate.m */,
+				8327FACD10375AE400CA95EC /* XActivityIndicator.h */,
+				8327FACE10375AE400CA95EC /* XActivityIndicator.m */,
+				8378BC6B103886850075A580 /* XTableViewCellBase.h */,
+				8378BC6C103886850075A580 /* XTableViewCellBase.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		8327F8FC1037031100CA95EC /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				83302D4610382A8E00E10BA6 /* JSON.h */,
+				83302D4710382A8E00E10BA6 /* NSObject+SBJSON.h */,
+				83302D4810382A8E00E10BA6 /* NSObject+SBJSON.m */,
+				83302D4910382A8E00E10BA6 /* NSString+SBJSON.h */,
+				83302D4A10382A8E00E10BA6 /* NSString+SBJSON.m */,
+				83302D4B10382A8E00E10BA6 /* SBJSON.m */,
+				83302D4C10382A8E00E10BA6 /* SBJsonBase.h */,
+				83302D4D10382A8E00E10BA6 /* SBJsonBase.m */,
+				83302D4E10382A8E00E10BA6 /* SBJsonParser.h */,
+				83302D4F10382A8E00E10BA6 /* SBJsonParser.m */,
+				83302D5010382A8E00E10BA6 /* SBJsonWriter.h */,
+				83302D5110382A8E00E10BA6 /* SBJsonWriter.m */,
+				83302D5210382A8E00E10BA6 /* SBJSON.h */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		83370ABD1035C965009898A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83370ACC1035C971009898A8 /* DataModel.h */,
+				83370AC11035C971009898A8 /* DataModel.m */,
+				83370AC21035C971009898A8 /* DMUserDetails.m */,
+				83370AC31035C971009898A8 /* DMUserDetails.h */,
+				83370AC41035C971009898A8 /* DMTaskItem.m */,
+				83370AC51035C971009898A8 /* DMTaskItem.h */,
+				83370AC61035C971009898A8 /* DMProjectItem.m */,
+				83370AC71035C971009898A8 /* DMProjectItem.h */,
+				83370AC81035C971009898A8 /* DMLabelItem.m */,
+				83370AC91035C971009898A8 /* DMLabelItem.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Todoist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Todoist" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				8327F8911036FE9700CA95EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Todoist;
+			productName = Todoist;
+			productReference = 1D6058910D05DD3D006BFB54 /* Todoist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Todoist" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Todoist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				8327F7D41036EE3A00CA95EC /* Default.psd in Resources */,
+				8327F7DE1036EE3A00CA95EC /* Icon-Settings.png in Resources */,
+				8327F7DF1036EE3A00CA95EC /* icon.png in Resources */,
+				8327F7E01036EE3A00CA95EC /* icon.psd in Resources */,
+				8327F7E11036EE3A00CA95EC /* Todoist.ai in Resources */,
+				8327F7E21036EE3A00CA95EC /* Todoist.png in Resources */,
+				8327F9961037129D00CA95EC /* SplashScreen.xib in Resources */,
+				8327FA0E1037431F00CA95EC /* Default.png in Resources */,
+				8327FA221037457800CA95EC /* Title.png in Resources */,
+				8327FA6B103751C200CA95EC /* overlay.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				83370ACD1035C971009898A8 /* DataModel.m in Sources */,
+				83370ACE1035C971009898A8 /* DMUserDetails.m in Sources */,
+				83370ACF1035C971009898A8 /* DMTaskItem.m in Sources */,
+				83370AD01035C971009898A8 /* DMProjectItem.m in Sources */,
+				83370AD11035C971009898A8 /* DMLabelItem.m in Sources */,
+				8327F8491036FAB100CA95EC /* TodoistAppDelegate.m in Sources */,
+				8327F84A1036FAB100CA95EC /* RootViewController.m in Sources */,
+				8327F9951037129D00CA95EC /* SplashScreen.m in Sources */,
+				8327FA4C1037472400CA95EC /* ItemListViewController.m in Sources */,
+				8327FACF10375AE400CA95EC /* XActivityIndicator.m in Sources */,
+				83302D5310382A8E00E10BA6 /* NSObject+SBJSON.m in Sources */,
+				83302D5410382A8E00E10BA6 /* NSString+SBJSON.m in Sources */,
+				83302D5510382A8E00E10BA6 /* SBJSON.m in Sources */,
+				83302D5610382A8E00E10BA6 /* SBJsonBase.m in Sources */,
+				83302D5710382A8E00E10BA6 /* SBJsonParser.m in Sources */,
+				83302D5810382A8E00E10BA6 /* SBJsonWriter.m in Sources */,
+				8378BC6D103886850075A580 /* XTableViewCellBase.m in Sources */,
+				8378BC70103887150075A580 /* ProjectItemTableViewCell.m in Sources */,
+				8378BC73103889480075A580 /* UIColor+Hex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Todoist_Prefix.pch;
+				INFOPLIST_FILE = "Todoist-Info.plist";
+				OTHER_CFLAGS = "-DDEBUG=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Todoist;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Todoist_Prefix.pch;
+				INFOPLIST_FILE = "Todoist-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Todoist;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Todoist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Todoist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
