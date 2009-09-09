@@ -9,8 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "XTableViewCellBase.h"
 
-@interface ProjectItemTableViewCell : XTableViewCellBase {
-
+@interface ProjectItemTableViewCell : XTableViewCellBase {	
+	NSString*	content;
+	UIColor*	color;
+	int			count;
+	int			indent;
 }
+
+@property (retain) NSString* content;
+@property (retain) UIColor* color;
+@property (assign) int count;
+@property (assign) int indent;
 
 @end

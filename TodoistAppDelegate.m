@@ -73,10 +73,12 @@
 	
 	if ([loginDetails compare:@"\"LOGIN_ERROR\""] == NSOrderedSame) 
 	{
+		DLog (@"Login Failed : LOGIN_ERROR");
 		self.isLoggedIn = NO;
 	}
 	else
 	{
+		DLog (@"Login Success");
 		if (userDetails) {
 			[userDetails release];
 		}
@@ -185,6 +187,7 @@
 	splashScreen = [[SplashScreen alloc] initWithNibName:@"SplashScreen" bundle:nil];
 	[window addSubview:splashScreen.view];
 }
+
 
 @end
 

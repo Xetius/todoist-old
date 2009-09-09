@@ -12,6 +12,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		831F07281046F369006F9620 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 831F07271046F369006F9620 /* RegexKitLite.m */; };
 		8327F7D41036EE3A00CA95EC /* Default.psd in Resources */ = {isa = PBXBuildFile; fileRef = 8327F7C31036EE3A00CA95EC /* Default.psd */; };
 		8327F7DE1036EE3A00CA95EC /* Icon-Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 8327F7CD1036EE3A00CA95EC /* Icon-Settings.png */; };
 		8327F7DF1036EE3A00CA95EC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8327F7CE1036EE3A00CA95EC /* icon.png */; };
@@ -41,6 +42,9 @@
 		8378BC6D103886850075A580 /* XTableViewCellBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BC6C103886850075A580 /* XTableViewCellBase.m */; };
 		8378BC70103887150075A580 /* ProjectItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BC6F103887150075A580 /* ProjectItemTableViewCell.m */; };
 		8378BC73103889480075A580 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378BC72103889480075A580 /* UIColor+Hex.m */; };
+		8386E6F01042FFAE00299214 /* ItemListItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8386E6EF1042FFAE00299214 /* ItemListItemTableViewCell.m */; };
+		83AF4C9710581CE800C60A57 /* ItemListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83AF4C9610581CE800C60A57 /* ItemListTableViewCell.xib */; };
+		83F413DB105029D3004F3F38 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83F413DA105029D3004F3F38 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +53,15 @@
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BE9505104330F000E156F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = RegexKit.framework;
+			dstSubfolderSpec = 10;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +76,8 @@
 		28A0AAE50D9B0CCF005BE974 /* Todoist_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todoist_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		831F07261046F369006F9620 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		831F07271046F369006F9620 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		8327F7B11036ED6E00CA95EC /* XLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLogging.h; sourceTree = "<group>"; };
 		8327F7C31036EE3A00CA95EC /* Default.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Default.psd; sourceTree = "<group>"; };
 		8327F7CD1036EE3A00CA95EC /* Icon-Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Settings.png"; sourceTree = "<group>"; };
@@ -113,6 +128,10 @@
 		8378BC6F103887150075A580 /* ProjectItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectItemTableViewCell.m; sourceTree = "<group>"; };
 		8378BC71103889480075A580 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		8378BC72103889480075A580 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		8386E6EE1042FFAE00299214 /* ItemListItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListItemTableViewCell.h; sourceTree = "<group>"; };
+		8386E6EF1042FFAE00299214 /* ItemListItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListItemTableViewCell.m; sourceTree = "<group>"; };
+		83AF4C9610581CE800C60A57 /* ItemListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListTableViewCell.xib; sourceTree = "<group>"; };
+		83F413DA105029D3004F3F38 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Todoist-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Todoist-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +175,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				831F07261046F369006F9620 /* RegexKitLite.h */,
+				831F07271046F369006F9620 /* RegexKitLite.m */,
 				8378BC71103889480075A580 /* UIColor+Hex.h */,
 				8378BC72103889480075A580 /* UIColor+Hex.m */,
 				8327F7B11036ED6E00CA95EC /* XLogging.h */,
@@ -173,6 +194,8 @@
 				8327F9941037129D00CA95EC /* SplashScreen.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Todoist-Info.plist */,
+				83F413DA105029D3004F3F38 /* Settings.bundle */,
+				83AF4C9610581CE800C60A57 /* ItemListTableViewCell.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -206,6 +229,8 @@
 			children = (
 				8327FA4A1037472400CA95EC /* ItemListViewController.h */,
 				8327FA4B1037472400CA95EC /* ItemListViewController.m */,
+				8386E6EE1042FFAE00299214 /* ItemListItemTableViewCell.h */,
+				8386E6EF1042FFAE00299214 /* ItemListItemTableViewCell.m */,
 				8378BC6E103887150075A580 /* ProjectItemTableViewCell.h */,
 				8378BC6F103887150075A580 /* ProjectItemTableViewCell.m */,
 				8327F8481036FAB100CA95EC /* RootViewController.h */,
@@ -270,6 +295,7 @@
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				8327F8911036FE9700CA95EC /* CopyFiles */,
+				83BE9505104330F000E156F7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -320,6 +346,8 @@
 				8327FA0E1037431F00CA95EC /* Default.png in Resources */,
 				8327FA221037457800CA95EC /* Title.png in Resources */,
 				8327FA6B103751C200CA95EC /* overlay.png in Resources */,
+				83F413DB105029D3004F3F38 /* Settings.bundle in Resources */,
+				83AF4C9710581CE800C60A57 /* ItemListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +378,8 @@
 				8378BC6D103886850075A580 /* XTableViewCellBase.m in Sources */,
 				8378BC70103887150075A580 /* ProjectItemTableViewCell.m in Sources */,
 				8378BC73103889480075A580 /* UIColor+Hex.m in Sources */,
+				8386E6F01042FFAE00299214 /* ItemListItemTableViewCell.m in Sources */,
+				831F07281046F369006F9620 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +395,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Frameworks\"",
+					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -372,7 +403,7 @@
 				GCC_PREFIX_HEADER = Todoist_Prefix.pch;
 				INFOPLIST_FILE = "Todoist-Info.plist";
 				OTHER_CFLAGS = "-DDEBUG=1";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = Todoist;
 			};
 			name = Debug;
@@ -386,11 +417,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Frameworks\"",
+					"\"$(DEVELOPER_DIR)/Local/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Todoist_Prefix.pch;
 				INFOPLIST_FILE = "Todoist-Info.plist";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = Todoist;
 			};
 			name = Release;
@@ -403,6 +435,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-licucore";
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.0;
 			};
@@ -416,6 +449,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-licucore";
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.0;
 			};

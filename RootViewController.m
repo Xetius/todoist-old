@@ -6,11 +6,14 @@
 //  Copyright Xetius Services Ltd. 2009. All rights reserved.
 //
 
+#import "ProjectItemTableViewCell.h"
 #import "TodoistAppDelegate.h"
 #import "RootViewController.h"
 #import "ItemListViewController.h"
 #import "DataModel.h"
-#import "ProjectItemTableViewCell.h"
+#import "UIColor+Hex.h"
+
+#define ROW_HEIGHT 60
 
 @implementation RootViewController
 
@@ -39,6 +42,8 @@
 
 -(void) willLoadProjects
 {
+	DLog(@"Start RootViewController::willLoadProjects");
+	
 	TodoistAppDelegate* delegate = [[UIApplication sharedApplication] delegate];
 	
 	NSURL* url = [NSURL URLWithString:[NSString stringWithFormat:@"http://todoist.com/API/getProjects?token=%@", delegate.userDetails.api_token]];
@@ -61,12 +66,15 @@
 		[projectItem release];
 	}
 	self.projects = projectsTemp;
+	DLog(@"Finish RootViewController::willLoadProjects");
 	[self performSelectorOnMainThread:@selector(didFinishLoadingProjects) withObject:nil waitUntilDone:NO];
 }
 
 -(void) didFinishLoadingProjects
 {
+	DLog(@"Start RootViewController::didFinishLoadingProjects");
 	[[self tableView] reloadData];
+	DLog(@"Finish RootViewController::didFinishLoadingProjects");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -103,10 +111,15 @@
     ProjectItemTableViewCell* cell = (ProjectItemTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[ProjectItemTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+		cell.frame = CGRectMake(0.0, 0.0, 320.0, ROW_HEIGHT);
     }
     
 	// Configure the cell.
-	cell.textLabel.text = [[[self projects] objectAtIndex:indexPath.row] name];
+	DMProjectItem* projectItem = [[self projects] objectAtIndex:indexPath.row];
+	cell.content = projectItem.name;
+	cell.count = projectItem.cache_count;
+	cell.color = [UIColor colorForHex:projectItem.color];
+	cell.indent = projectItem.indent;
 
     return cell;
 }

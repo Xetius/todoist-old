@@ -23,6 +23,16 @@
 
 @implementation XTableViewCellBase
 
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+		contentView = [[XTableViewCellBaseView alloc] initWithFrame:CGRectZero];
+		contentView.opaque = YES;
+		[self addSubview:contentView];
+		[contentView release];
+	}
+	return self;
+}
+
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
 		contentView = [[XTableViewCellBaseView alloc] initWithFrame:CGRectZero];

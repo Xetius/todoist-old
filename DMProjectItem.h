@@ -21,8 +21,8 @@
 }
 
 @property long user_id;
-@property (copy) NSString* name;
-@property (copy) NSString* color;
+@property (retain) NSString* name;
+@property (retain) NSString* color;
 @property int collapsed;
 @property int item_order;
 @property int cache_count;
