@@ -16,23 +16,22 @@
 	SplashScreen* splashScreen;
     UIWindow *window;
     UINavigationController *navigationController;
-	NSOperationQueue* operationQueue;
 	
 	DMUserDetails* userDetails;
 	BOOL isLoggedIn;
+	
+	NSMutableData* requestData;
 }
 
 @property (nonatomic, retain) XActivityIndicator* largeActivityIndicator;
 @property (nonatomic, retain) SplashScreen* splashScreen;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
-@property (retain) NSOperationQueue* operationQueue;
 @property (retain) DMUserDetails* userDetails;
 @property (assign) BOOL isLoggedIn;
+@property (retain) NSMutableData* requestData;
 
 -(void) beginLogon;
--(void) performLogon;
--(void) didFinishLogon;
 -(void) showSplashScreen:(BOOL) show;
 -(void) createSplashScreen;
 -(void) showActivityIndicator:(BOOL)show;

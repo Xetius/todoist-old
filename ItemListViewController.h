@@ -9,28 +9,25 @@
 #import <UIKit/UIKit.h>
 #import "DMTaskItem.h"
 #import "XActivityIndicator.h"
+#import "XConnectionHandler.h"
 
-@interface ItemListViewController : UITableViewController<DMTaskItemDelegate> {
+@interface ItemListViewController : UITableViewController<XConnectionHandlerDelegate> {
 	long projectId;
 	NSMutableArray* itemList;
 	XActivityIndicator* activity;
-	
-	UIFont* normalFont;
-	UIFont* boldFont;
-	UIFont* italicFont;
-	UIFont* boldItalicFont;
+	NSDictionary* labels;
+	NSMutableDictionary* connections;
 }
 
-@property long projectId;
+@property (assign) long projectId;
 @property (retain) NSMutableArray* itemList;
+@property (retain) NSDictionary* labels;
+@property (retain) NSMutableDictionary* connections;
 @property (retain) XActivityIndicator* activity;
 
-@property (retain) UIFont* normalFont;
-@property (retain) UIFont* boldFont;
-@property (retain) UIFont* italicFont;
-@property (retain) UIFont* boldItalicFont;
-
--(void) willLoadItems;
--(void) didFinishLoadingItems;
+-(void) initLoadItems;
+-(void) connectionDidFinishLoading:(int) connectionId withData:(NSData*) requestData;
+-(void) loadUncompleteItems:(NSData*) data;
+-(void) loadCompleteItems:(NSData*) data;
 
 @end

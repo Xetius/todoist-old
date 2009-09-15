@@ -16,16 +16,15 @@
 @synthesize splashScreen;
 @synthesize window;
 @synthesize navigationController;
-@synthesize operationQueue;
 @synthesize userDetails;
 @synthesize isLoggedIn;
+@synthesize requestData;
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
-	operationQueue = [[NSOperationQueue alloc] init];
+	self.requestData = nil;
     // Override point for customization after app launch    
 	
 	[self showSplashScreen:YES];
@@ -43,9 +42,9 @@
 #pragma mark Memory management
 
 - (void)dealloc {
+	[requestData release];
 	[navigationController release];
 	[window release];
-	[operationQueue release];
 	[splashScreen release];
 	[largeActivityIndicator release];
 	[userDetails release];
@@ -56,21 +55,68 @@
 -(void) beginLogon 
 {
 	DLog (@"beginLogon");
-	NSInvocationOperation* operation = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(performLogon) object:nil];
-	[operationQueue addOperation:operation];
-	[operation release];
-}
-
--(void) performLogon 
-{
-	DLog(@"performLogon");
-	
 	NSString* userName = [[NSUserDefaults standardUserDefaults] stringForKey:@"username_pref"];
 	NSString* password = [[NSUserDefaults standardUserDefaults] stringForKey:@"password_pref"];
+	NSString* loginUrl = [NSString stringWithFormat:@"http://todoist.com/API/login?email=%@&password=%@", userName, password];
+	NSURLRequest* req = [NSURLRequest requestWithURL:[NSURL URLWithString:loginUrl]
+										 cachePolicy:NSURLRequestUseProtocolCachePolicy
+									 timeoutInterval:60.0];
+	DLog (@"Logging in as %@ using %@ at %@", userName, password, loginUrl);
 	
-	NSURL* url = [NSURL URLWithString:[NSString stringWithFormat:@"https://todoist.com/API/login?email=%@&password=%@",userName, password]];
-	NSString* loginDetails = [NSString stringWithContentsOfURL:url];
+	NSURLConnection* conn = [[NSURLConnection alloc] initWithRequest:req delegate:self];
+	if (conn) {
+		DLog(@"Creating connection data");
+		self.requestData = [[NSMutableData data] retain];
+	}
+	else {
+		DLog (@"Failure to create connection");
+		// Display non-connection message
+	}
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+	DLog (@"connection:didReceiveResponse");
+    // this method is called when the server has determined that it
+    // has enough information to create the NSURLResponse
 	
+    // it can be called multiple times, for example in the case of a
+    // redirect, so each time we reset the data.
+    // receivedData is declared as a method instance elsewhere
+    [self.requestData setLength:0];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+	DLog (@"connection:didReceiveData");
+    // append the new data to the receivedData
+    // receivedData is declared as a method instance elsewhere
+    [self.requestData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    // release the connection, and the data object
+    [connection release];
+    // receivedData is declared as a method instance elsewhere
+    [self.requestData release];
+
+    // inform the user
+    NSLog(@"Connection failed! Error - %@ %@",
+          [error localizedDescription],
+          [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
+
+	[self showActivityIndicator:NO];
+	[self showSplashScreen:NO];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    // do something with the data
+    // receivedData is declared as a method instance elsewhere
+    NSLog(@"Succeeded! Received %d bytes of data",[requestData length]);
+	
+	NSString* loginDetails = [[NSString alloc] initWithData:requestData encoding:NSUTF8StringEncoding];
 	if ([loginDetails compare:@"\"LOGIN_ERROR\""] == NSOrderedSame) 
 	{
 		DLog (@"Login Failed : LOGIN_ERROR");
@@ -107,12 +153,10 @@
 		self.isLoggedIn = YES;
 	}
 	
-	[self performSelectorOnMainThread:@selector(didFinishLogon) withObject:nil waitUntilDone:NO];
-}
+    // release the connection, and the data object
+    [connection release];
+    [requestData release];
 
--(void) didFinishLogon
-{
-	DLog (@"didFinishLogon");
 	[self showActivityIndicator:NO];
 	[self showSplashScreen:NO];
 	

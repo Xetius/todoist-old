@@ -13,14 +13,14 @@
 	NSString* color;
 	int count;
 	long uid;
-	long id;
+	long labelId;
 	NSString* name;
 }
 
-@property (copy) NSString* color;
+@property (retain) NSString* color;
 @property int count;
 @property long uid;
-@property long id;
-@property (copy) NSString* name;
+@property long labelId;
+@property (retain) NSString* name;
 
 @end

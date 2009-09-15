@@ -14,7 +14,7 @@
 @synthesize color;
 @synthesize count;
 @synthesize uid;
-@synthesize id;
+@synthesize labelId;
 @synthesize name;
 
 @end

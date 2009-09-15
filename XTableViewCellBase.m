@@ -33,16 +33,6 @@
 	return self;
 }
 
-- (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
-		contentView = [[XTableViewCellBaseView alloc] initWithFrame:CGRectZero];
-		contentView.opaque = YES;
-		[self addSubview:contentView];
-		[contentView release];
-    }
-    return self;
-}
-
 - (void)dealloc {
     [super dealloc];
 }
@@ -59,7 +49,7 @@
 	[contentView setNeedsDisplay];
 }
 
-- (void)drawContentView:(CGRect) r {
+- (void)drawContentView:(CGRect) rect {
 	// subclasses must implement this
 }
 

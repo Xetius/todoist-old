@@ -9,8 +9,6 @@
 #import "ProjectItemTableViewCell.h"
 #import "UIColor+Hex.h"
 
-#define INDENT_SIZE 25.0
-
 @implementation ProjectItemTableViewCell
 
 @synthesize content;
@@ -18,12 +16,14 @@
 @synthesize color;
 @synthesize indent;
 
-- (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+		
+        // Initialization code
+		
     }
     return self;
 }
-
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
 
@@ -42,16 +42,6 @@
 	{
 		[content release];
 		content = [s retain];
-	}
-	[self setNeedsDisplay];
-}
-
--(void) setColor:(UIColor*) s
-{
-	if (color != s)
-	{
-		[color release];
-		color = [s retain];
 	}
 	[self setNeedsDisplay];
 }
