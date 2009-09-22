@@ -30,130 +30,20 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.title = @"Projects";
 	self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
-	// Load the projects from Web
-	self.projectsNeedReloading = YES;
-	self.labelsNeedReloading = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-	[self initLoadData];
-}
-
-
--(void) initLoadData
-{
-	DLog(@"Start RootViewController::initLoadData");
-	TodoistAppDelegate* delegate = [[UIApplication sharedApplication] delegate];
-	if (projectsNeedReloading) {
-		NSString* projectsUrl = [NSString stringWithFormat:@"http://todoist.com/API/getProjects?token=%@", delegate.userDetails.api_token];
-		NSURLRequest* projectsRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:projectsUrl]
-												 cachePolicy:NSURLRequestUseProtocolCachePolicy
-											 timeoutInterval:60.0];
-		XConnectionHandler* projectHandler = [[XConnectionHandler alloc] initWithId:PROJECTS_CONNECTION_ID andDelegate:self];
-		NSURLConnection* projectsConnection = [[NSURLConnection alloc] initWithRequest:projectsRequest delegate:projectHandler];
-		if (projectsConnection) {
-			[connectionHandlers setObject:projectHandler forKey:[NSNumber numberWithInt:PROJECTS_CONNECTION_ID]];
-		}
-		else {
-			// Handle errors
-			DLog (@"Should handle errors for projectsConnection failing to create");
-		}
-		[projectHandler release];
-		
-		self.projectsNeedReloading = NO;
-	}
-	
-	if (labelsNeedReloading) {
-		NSString* labelsUrl = [NSString stringWithFormat:@"http://todoist.com/API/getLabels?token=%@", delegate.userDetails.api_token];
-		NSURLRequest* labelsRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:labelsUrl]
-													  cachePolicy:NSURLRequestUseProtocolCachePolicy
-												  timeoutInterval:60.0];
-		XConnectionHandler* labelsHandler = [[XConnectionHandler alloc] initWithId:LABELS_CONNECTION_ID andDelegate:self];
-		NSURLConnection* labelsConnection = [[NSURLConnection alloc] initWithRequest:labelsRequest delegate:labelsHandler];
-		if (labelsConnection) {
-			[connectionHandlers setObject:labelsHandler forKey:[NSNumber numberWithInt:LABELS_CONNECTION_ID]];
-		}
-		else {
-			// Handle errors
-			DLog (@"Should handle errors for labelsConnection failing to create");
-		}
-		[labelsHandler release];
-	}
 }
 
 -(void) connectionDidFinishLoading:(int) connectionId withData:(NSData*) requestData 
 {
 	switch (connectionId) {
-		case PROJECTS_CONNECTION_ID:
-		{
-			[self loadProjectData:requestData];
-		}
-			break;
-		case LABELS_CONNECTION_ID:
-		{
-			[self loadLabelsData:requestData];
-		}
-			break;
 		default:
 			break;
 	}
 	
 	[connectionHandlers removeObjectForKey:[NSNumber numberWithInt:connectionId]];
-}
-
--(void) loadProjectData:(NSData*) requestData
-{
-	DLog (@"loadProjectsData");
-	// Clear out all old data
-	[self.projects release];
-	
-	NSString* data = [[NSString alloc] initWithData:requestData encoding:NSUTF8StringEncoding];
-	NSArray* jsonProjectsArray = [data JSONValue];
-	NSMutableArray* projectsTemp = [NSMutableArray arrayWithCapacity:1];
-	for (NSDictionary* jsonProject in jsonProjectsArray) 
-	{
-		DMProjectItem* projectItem = [[DMProjectItem alloc] init];
-		projectItem.user_id = [[jsonProject objectForKey:@"user_id"] longValue];
-		projectItem.name = [jsonProject objectForKey:@"name"];
-		projectItem.color = [jsonProject objectForKey:@"color"];
-		projectItem.collapsed = [[jsonProject objectForKey:@"collapsed"] intValue];
-		projectItem.item_order = [[jsonProject objectForKey:@"item_order"] intValue];
-		projectItem.cache_count = [[jsonProject objectForKey:@"cache_count"] intValue];
-		projectItem.indent = [[jsonProject objectForKey:@"indent"] intValue];
-		projectItem.id = [[jsonProject objectForKey:@"id"] longValue];
-		
-		[projectsTemp addObject:projectItem];
-		[projectItem release];
-	}
-	self.projects = projectsTemp;
-	[[self tableView] reloadData];
-	self.projectsNeedReloading = NO;
-}
-
--(void) loadLabelsData:(NSData *)requestData {
-	DLog (@"loadLabelsData");
-	[self.labels release];
-	
-	NSString* data = [[NSString alloc] initWithData:requestData encoding:NSUTF8StringEncoding];
-	NSDictionary* jsonLabelsDictionary = [data JSONValue];
-	NSMutableDictionary* labelsTemp = [NSMutableDictionary dictionaryWithCapacity:1];
-	for (id name in jsonLabelsDictionary) {
-		DLog(@"Label:%@", name);
-		NSDictionary* jsonLabel = [jsonLabelsDictionary objectForKey:name];
-		DMLabelItem* labelItem = [[DMLabelItem alloc] init];
-		labelItem.name = [jsonLabel objectForKey:@"name"];
-		labelItem.labelId = [[jsonLabel objectForKey:@"id"] longValue];
-		labelItem.uid = [[jsonLabel objectForKey:@"uid"] longValue];
-		labelItem.color = [[jsonLabel objectForKey:@"color"] intValue];
-		labelItem.count = [[jsonLabel objectForKey:@"count"] intValue];
-		[labelsTemp setObject:labelItem forKey:[NSNumber numberWithLong:labelItem.labelId]];
-		[labelItem release];
-	}
-	self.labels = labelsTemp;
-	[[self tableView] reloadData];
-	self.labelsNeedReloading = NO;
 }
 
 - (void)didReceiveMemoryWarning {

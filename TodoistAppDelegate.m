@@ -9,6 +9,8 @@
 #import "TodoistAppDelegate.h"
 #import "RootViewController.h"
 #import "JSON/JSON.h"
+#import "DMLabelItem.h"
+#import "DMProjectItem.h"
 
 @implementation TodoistAppDelegate
 
@@ -17,16 +19,17 @@
 @synthesize window;
 @synthesize navigationController;
 @synthesize userDetails;
+@synthesize projects;
+@synthesize labels;
 @synthesize isLoggedIn;
-@synthesize requestData;
+@synthesize connectionHandlers;
+@synthesize connectionLoaded;
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-	self.requestData = nil;
     // Override point for customization after app launch    
-	
 	[self showSplashScreen:YES];
 	[self showActivityIndicator:YES];
 	[self beginLogon];
@@ -42,7 +45,6 @@
 #pragma mark Memory management
 
 - (void)dealloc {
-	[requestData release];
 	[navigationController release];
 	[window release];
 	[splashScreen release];
@@ -55,62 +57,123 @@
 -(void) beginLogon 
 {
 	DLog (@"beginLogon");
+	[self setConnectionLoaded:0];
 	NSString* userName = [[NSUserDefaults standardUserDefaults] stringForKey:@"username_pref"];
 	NSString* password = [[NSUserDefaults standardUserDefaults] stringForKey:@"password_pref"];
 	NSString* loginUrl = [NSString stringWithFormat:@"http://todoist.com/API/login?email=%@&password=%@", userName, password];
 	NSURLRequest* req = [NSURLRequest requestWithURL:[NSURL URLWithString:loginUrl]
 										 cachePolicy:NSURLRequestUseProtocolCachePolicy
 									 timeoutInterval:60.0];
-	DLog (@"Logging in as %@ using %@ at %@", userName, password, loginUrl);
-	
-	NSURLConnection* conn = [[NSURLConnection alloc] initWithRequest:req delegate:self];
+	XConnectionHandler* loginHandler = [[XConnectionHandler alloc] initWithId:LOGIN_CONNECTION_ID andDelegate:self];
+	NSURLConnection* conn = [[NSURLConnection alloc] initWithRequest:req delegate:loginHandler];
 	if (conn) {
-		DLog(@"Creating connection data");
-		self.requestData = [[NSMutableData data] retain];
+		[connectionHandlers setObject:loginHandler forKey:[NSNumber numberWithInt:LOGIN_CONNECTION_ID]];
 	}
 	else {
-		DLog (@"Failure to create connection");
+		DLog (@"Failure to create login connection");
 		// Display non-connection message
+	}
+	[loginHandler release];
+}
+
+-(void) initRequestsForLabelsAndProjects 
+{
+	NSString* token = [[userDetails api_token] autorelease];
+	NSString* labelsUrl = [NSString stringWithFormat:@"http://todoist.com/API/getLabels?token=%@", token];
+	NSString* projectsUrl = [NSString stringWithFormat:@"http://todoist.com/API/getProjects?token=%@", token];
+	
+	NSURLRequest* labelsRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:labelsUrl]
+												   cachePolicy:NSURLRequestUseProtocolCachePolicy
+											   timeoutInterval:60.0];
+	NSURLRequest* projectsRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:projectsUrl]
+													 cachePolicy:NSURLRequestUseProtocolCachePolicy
+												 timeoutInterval:60.0];
+	
+	XConnectionHandler* labelsHandler = [[XConnectionHandler alloc] initWithId:LABELS_CONNECTION_ID andDelegate:self];
+	XConnectionHandler* projectsHandler = [[XConnectionHandler alloc] initWithId:PROJECTS_CONNECTION_ID andDelegate:self];
+	
+	NSURLConnection* labelsConnection = [[NSURLConnection alloc] initWithRequest:labelsRequest delegate:labelsHandler];
+	if (labelsConnection) {
+		DLog (@"initiated request for Label data");
+		[connectionHandlers setObject:labelsHandler forKey:[NSNumber numberWithInt:LABELS_CONNECTION_ID]];
+	}
+	else {
+		// Handle Error
+		DLog (@"Failure to create labels connection");
+	}
+	[labelsHandler release];
+	
+	NSURLConnection* projectsConnection = [[NSURLConnection alloc] initWithRequest:projectsRequest delegate:projectsHandler];
+	if (projectsConnection) {
+		DLog (@"initiated request for Projects data");
+		[connectionHandlers setObject:projectsConnection forKey:[NSNumber numberWithInt:PROJECTS_CONNECTION_ID]];
+	}
+	else {
+		// Handle Error
+		DLog (@"Failure to create projects connection");
+	}
+	[projectsHandler release];
+}
+
+-(void) connectionDidFailLoading:(int) connectionId withError:(NSError*) error {
+	switch (connectionId) {
+		case LOGIN_CONNECTION_ID:
+		{
+			DLog(@"connectionDidFailLoading:LOGIN_CONNECTION_ID");
+		}
+			break;
+		case LABELS_CONNECTION_ID:
+		{
+			DLog(@"connectionDidFailLoading:LABELS_CONNECTION_ID");
+		}
+			break;
+		case PROJECTS_CONNECTION_ID:
+		{
+			DLog(@"connectionDidFailLoading:PROJECTS_CONNECTION_ID");
+		}
+			break;
+		default:
+			break;
 	}
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+-(void) connectionDidFinishLoading:(int) connectionId withData:(NSData*) requestData 
 {
-	DLog (@"connection:didReceiveResponse");
-    // this method is called when the server has determined that it
-    // has enough information to create the NSURLResponse
+	switch (connectionId) {
+		case LOGIN_CONNECTION_ID:
+		{
+			DLog (@"connectionDidFinishLoading:LOGIN_CONNECTION_ID");
+			[self saveUserData:requestData];
+			[self initRequestsForLabelsAndProjects];
+			connectionLoaded |= LOGIN_CONNECTION_DATA;
+		}
+			break;
+		case LABELS_CONNECTION_ID:
+		{
+			DLog (@"connectionDidFinishLoading:LABELS_CONNECTION_ID");
+			[self loadLabelsData:requestData];
+			connectionLoaded |= LABELS_CONNECTION_DATA;
+		}
+			break;
+		case PROJECTS_CONNECTION_ID:
+		{
+			DLog (@"connectionDidFinishLoading:PROJECTS_CONNECTION_ID");
+			[self loadProjectsData:requestData];
+			connectionLoaded |= PROJECTS_CONNECTION_DATA;
+		}
+			break;
+
+		default:
+			break;
+	}
 	
-    // it can be called multiple times, for example in the case of a
-    // redirect, so each time we reset the data.
-    // receivedData is declared as a method instance elsewhere
-    [self.requestData setLength:0];
+	[connectionHandlers removeObjectForKey:[NSNumber numberWithInt:connectionId]];
+	if (self.connectionLoaded & (LOGIN_CONNECTION_DATA | PROJECTS_CONNECTION_DATA | LABELS_CONNECTION_ID)) {
+		[self allDataLoaded];
+	}
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-	DLog (@"connection:didReceiveData");
-    // append the new data to the receivedData
-    // receivedData is declared as a method instance elsewhere
-    [self.requestData appendData:data];
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
-{
-    // release the connection, and the data object
-    [connection release];
-    // receivedData is declared as a method instance elsewhere
-    [self.requestData release];
-
-    // inform the user
-    NSLog(@"Connection failed! Error - %@ %@",
-          [error localizedDescription],
-          [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
-
-	[self showActivityIndicator:NO];
-	[self showSplashScreen:NO];
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+- (void)saveUserData:(NSData*) requestData;
 {
     // do something with the data
     // receivedData is declared as a method instance elsewhere
@@ -152,17 +215,66 @@
 		
 		self.isLoggedIn = YES;
 	}
-	
-    // release the connection, and the data object
-    [connection release];
-    [requestData release];
+}
 
+-(void) loadLabelsData:(NSData*) requestData 
+{
+	// Loaded Labels Data so build dictionary to contain it
+    NSLog(@"Succeeded! Received %d bytes of data",[requestData length]);
+	NSString* data = [[NSString alloc] initWithData:requestData encoding:NSUTF8StringEncoding];
+	NSDictionary* jsonLabelsDictionary = [data JSONValue];
+	NSMutableDictionary* labelsTemp = [NSMutableDictionary dictionaryWithCapacity:1];
+	for (id name in jsonLabelsDictionary) {
+		DLog(@"Label:%@", name);
+		NSDictionary* jsonLabel = [jsonLabelsDictionary objectForKey:name];
+		DMLabelItem* labelItem = [[DMLabelItem alloc] init];
+		labelItem.name = [jsonLabel objectForKey:@"name"];
+		labelItem.labelId = [[jsonLabel objectForKey:@"id"] longValue];
+		labelItem.uid = [[jsonLabel objectForKey:@"uid"] longValue];
+		labelItem.color = [[jsonLabel objectForKey:@"color"] intValue];
+		labelItem.count = [[jsonLabel objectForKey:@"count"] intValue];
+		[labelsTemp setObject:labelItem forKey:[NSNumber numberWithLong:labelItem.labelId]];
+		[labelItem release];
+	}
+	self.labels = labelsTemp;	
+}
+
+-(void) loadProjectsData:(NSData*) requestData
+{
+    NSLog(@"Succeeded! Received %d bytes of data",[requestData length]);
+	NSString* data = [[NSString alloc] initWithData:requestData encoding:NSUTF8StringEncoding];
+	NSArray* jsonProjectsArray = [data JSONValue];
+	NSMutableArray* projectsTemp = [NSMutableArray arrayWithCapacity:1];
+	for (NSDictionary* jsonProject in jsonProjectsArray) 
+	{
+		DMProjectItem* projectItem = [[DMProjectItem alloc] init];
+		projectItem.user_id = [[jsonProject objectForKey:@"user_id"] longValue];
+		projectItem.name = [jsonProject objectForKey:@"name"];
+		projectItem.color = [jsonProject objectForKey:@"color"];
+		projectItem.collapsed = [[jsonProject objectForKey:@"collapsed"] intValue];
+		projectItem.item_order = [[jsonProject objectForKey:@"item_order"] intValue];
+		projectItem.cache_count = [[jsonProject objectForKey:@"cache_count"] intValue];
+		projectItem.indent = [[jsonProject objectForKey:@"indent"] intValue];
+		projectItem.id = [[jsonProject objectForKey:@"id"] longValue];
+		
+		[projectsTemp addObject:projectItem];
+		[projectItem release];
+	}
+	self.projects = projectsTemp;	
+}
+
+-(void) allDataLoaded 
+{
+	DLog(@"allDataLoaded");
 	[self showActivityIndicator:NO];
 	[self showSplashScreen:NO];
 	
 	if (self.isLoggedIn)
 	{
-		RootViewController* viewController = [[RootViewController alloc] initWithStyle:UITableViewStylePlain];
+		RootViewController* viewController = [[RootViewController alloc] initWithStyle:UITableViewStyleGrouped];
+		viewController.labels = [[self labels] retain];
+		viewController.projects = [[self projects] retain];
+		
 		[navigationController pushViewController:viewController animated:NO];
 		[viewController release];
 		

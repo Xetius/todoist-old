@@ -12,9 +12,6 @@
 	NSArray* projects;
 	NSDictionary* labels;
 	NSMutableDictionary* connectionHandlers;
-	
-	BOOL projectsNeedReloading;
-	BOOL labelsNeedReloading;
 }
 
 @property (retain) NSArray* projects;

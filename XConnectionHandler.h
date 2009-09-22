@@ -11,6 +11,7 @@
 @protocol XConnectionHandlerDelegate
 
 -(void) connectionDidFinishLoading:(int) connectionId withData:(NSData*) requestData;
+-(void) connectionDidFailLoading:(int) connectionId withError:(NSError*) error;
 
 @end
 

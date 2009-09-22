@@ -47,6 +47,7 @@
     DLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
           [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
+	[delegate connectionDidFailLoading:[self connectionId] withError:error]; 
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
