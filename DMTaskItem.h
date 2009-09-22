@@ -14,13 +14,13 @@
 	BOOL	  completed;	
 	int		  priority;
 	int		  indent;
-	NSArray*  labels;
+	NSString*  labels;
 }
 
 @property (assign) BOOL completed;
 @property (assign) int indent;
 @property (assign) int priority;
 @property (retain) NSString* content;
-@property (retain) NSArray* labels;
+@property (retain) NSString* labels;
 
 @end

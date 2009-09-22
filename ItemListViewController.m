@@ -13,6 +13,7 @@
 #import "JSON/JSON.h"
 #import "RegexKitLite.h"
 #import "XConnectionHandler.h"
+#import "UIColor+Hex.h"
 
 @implementation ItemListViewController
 
@@ -22,10 +23,34 @@
 @synthesize labels;
 @synthesize connections;
 
+@synthesize labelFont;
+@synthesize contentFont;
+
+@synthesize backgroundColor;
+@synthesize labelColor;
+@synthesize dateColor;
+@synthesize priority1Color;
+@synthesize priority2Color;
+@synthesize priority3Color;
+@synthesize priority4Color;
+
 - (id)initWithStyle:(UITableViewStyle)style {
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
     if (self = [super initWithStyle:style]) {
+		DLog (@"Creating colours and fonts");
+		
 		self.title = @"Item";
+
+		labelFont = [UIFont systemFontOfSize:LABEL_FONT_SIZE];
+		contentFont = [UIFont systemFontOfSize:CONTENT_FONT_SIZE];
+
+		backgroundColor		= [UIColor colorForHex:@"FFFEFF"];
+		labelColor			= [UIColor colorForHex:@"008800"];
+		dateColor			= [UIColor colorForHex:@"262626"];
+		priority1Color		= [UIColor colorForHex:@"FF0000"];
+		priority2Color		= [UIColor colorForHex:@"0079B5"];
+		priority3Color		= [UIColor colorForHex:@"008800"];
+		priority4Color		= [UIColor colorForHex:@"262626"];
 	}
     return self;
 }
@@ -100,15 +125,19 @@
 	NSMutableArray* uncompleteItems = [NSMutableArray arrayWithCapacity:1];
 	
 	// Iterate through each of the uncomplete items and build the list of data for each cell
-	for (id item in [jsonData JSONValue]) {
+	for (NSDictionary* item in [jsonData JSONValue]) {
 		DMTaskItem* taskItem = [[DMTaskItem alloc] init];
 		
 		[taskItem setCompleted:NO];
 		[taskItem setContent:[item objectForKey:@"content"]];
 		[taskItem setIndent:[[item objectForKey:@"indent"] intValue]];
-		for (id labelId in [item objectForKey:@"labels"]) {
-			
+		NSMutableArray* labelArray = [NSMutableArray array];
+		for (NSDecimalNumber* labelId in [item objectForKey:@"labels"]) {
+			[labelArray addObject:[@"@" stringByAppendingString:[[labels objectForKey:labelId] name]]];
 		}
+		NSString* labelString = [labelArray componentsJoinedByString:@" "];
+		DLog(@"labels:%@", labelString);
+		[taskItem setLabels:labelString];
 		
 		[uncompleteItems addObject:[taskItem retain]];
 		[taskItem release];
@@ -128,6 +157,13 @@
 		[taskItem setCompleted:YES];
 		[taskItem setContent:[item objectForKey:@"content"]];
 		[taskItem setIndent:[[item objectForKey:@"indent"] intValue]];
+		NSMutableArray* labelArray = [NSMutableArray array];
+		for (NSDecimalNumber* labelId in [item objectForKey:@"labels"]) {
+			[labelArray addObject:[@"@" stringByAppendingString:[[labels objectForKey:labelId] name]]];
+		}
+		NSString* labelString = [labelArray componentsJoinedByString:@" "];
+		DLog(@"labels:%@", labelString);
+		[taskItem setLabels:labelString];
 		
 		[completeItems addObject:[taskItem retain]];
 		[taskItem release];
@@ -136,35 +172,6 @@
 	[itemList replaceObjectAtIndex:1 withObject:completeItems];
 	[[self tableView] reloadData];
 }
-
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-*/
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-	[super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-	[super viewDidDisappear:animated];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -203,6 +210,7 @@
     }
     
     // Set up the cell...
+	cell.cellDelegate = self;
 	cell.details = [[itemList objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
 		
     return cell;
@@ -216,6 +224,7 @@
         cell = [[[ItemListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 	
+	cell.cellDelegate = self;
 	cell.details = [[itemList objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
 	CGFloat height = [cell cellHeightForWidth:320.0];
 	
@@ -223,10 +232,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController];
-	// [anotherViewController release];
 }
 
 // Override to support conditional editing of the table view.
@@ -234,27 +239,6 @@
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
 
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -267,6 +251,80 @@
     [super dealloc];
 }
 
+// ItemListTableViewCellDelegate methods
+-(UIFont*) fontForId:(int) fontID {
+	UIFont* requestedFont = nil;
+	switch (fontID) {
+		case LABEL_FONT_ID:
+		{
+			requestedFont = labelFont;
+		}
+			break;
+		case CONTENT_FONT_ID:
+		{
+			requestedFont = contentFont;
+		}
+			break;
+		case DATE_FONT_ID:
+		{
+			requestedFont = contentFont;
+		}
+			break;
+		default:
+		{
+			requestedFont = contentFont;
+		}
+			break;
+	}
+	return [requestedFont autorelease];
+}
+
+-(UIColor*) colorForId:(int) colorID {
+	UIColor* requestedColor = nil;
+	switch (colorID) {
+		case BACKGROUND_COLOR_ID:
+		{
+			requestedColor = backgroundColor;
+		}
+			break;
+		case LABEL_COLOR_ID:
+		{
+			requestedColor = labelColor;
+		}
+			break;
+		case DATE_COLOR_ID:
+		{
+			requestedColor = dateColor;
+		}
+			break;
+		case PRIORITY_1_COLOR_ID:
+		{
+			requestedColor = priority1Color;
+		}
+			break;
+		case PRIORITY_2_COLOR_ID:
+		{
+			requestedColor = priority2Color;
+		}
+			break;
+		case PRIORITY_3_COLOR_ID:
+		{
+			requestedColor = priority3Color;
+		}
+			break;
+		case PRIORITY_4_COLOR_ID:
+		{
+			requestedColor = priority4Color;
+		}
+			break;
+		default:
+		{
+			requestedColor = priority4Color;
+		}
+			break;
+	}
+	return [requestedColor autorelease];
+}
 
 @end
 

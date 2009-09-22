@@ -10,12 +10,20 @@
 #import "XTableViewCellBase.h"
 #import "DMTaskItem.h"
 
+@protocol ItemListTableViewCellDelegate
+-(UIFont*) fontForId:(int) fontID;
+-(UIColor*) colorForId:(int) colorID;
+@end
+
 @interface ItemListTableViewCell : XTableViewCellBase {
 	DMTaskItem* details;
+	NSObject<ItemListTableViewCellDelegate>* cellDelegate;
 }
 
 @property (retain) DMTaskItem* details;
+@property (retain) NSObject<ItemListTableViewCellDelegate>* cellDelegate;
 
 -(CGFloat) cellHeightForWidth:(CGFloat) width;
+-(CGFloat) drawText:(NSString*) text atPoint:(CGPoint) pt withFont:(UIFont*) font forWidth:(CGFloat) width;
 
 @end
