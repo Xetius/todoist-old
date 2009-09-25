@@ -188,13 +188,10 @@
 	else
 	{
 		DLog (@"Login Success");
-		if (userDetails) {
-			[userDetails release];
-		}
-		
+
 		NSDictionary* jsonData			= [loginDetails JSONValue];
 		
-		userDetails						= [[[DMUserDetails alloc] init] retain];
+		userDetails						= [[DMUserDetails alloc] init];
 		userDetails.id					= [[jsonData objectForKey:@"id"] intValue];
 		userDetails.api_token			= [jsonData objectForKey:@"api_token"];
 		userDetails.full_name			= [jsonData objectForKey:@"full_name"];
@@ -274,6 +271,7 @@
 		RootViewController* viewController = [[RootViewController alloc] initWithStyle:UITableViewStyleGrouped];
 		viewController.labels = [[self labels] retain];
 		viewController.projects = [[self projects] retain];
+		viewController.api_token = [[userDetails api_token] retain];
 		
 		[navigationController pushViewController:viewController animated:NO];
 		[viewController release];

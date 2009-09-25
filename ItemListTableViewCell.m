@@ -36,7 +36,7 @@
 
 - (void)drawContentView:(CGRect) rect {
 	// subclasses must implement this
-	DLog (@"Drawing Cell Content");
+	DLog (@"start Drawing Cell Content");
 	CGContextRef context = UIGraphicsGetCurrentContext();	
 	
 	UIColor* backgroundColor = [[cellDelegate colorForId:BACKGROUND_COLOR_ID] retain];
@@ -56,6 +56,7 @@
 	pt.y += ITEM_LIST_TOP_BORDER;
 	
 	if (self.details.labels) {
+		DLog (@"Drawing labels");
 		UIFont* labelFont = [[cellDelegate fontForId:LABEL_FONT_ID] retain];
 		CGSize labelsSize = [self.details.labels sizeWithFont:labelFont constrainedToSize:rect.size];
 		
@@ -65,6 +66,10 @@
 		[labelColor release];
 		[labelFont release];
 	}
+	else {
+		DLog (@"No labels to draw");
+	}
+
 //	pt.y += labelsSize.height;
 //	pt.y += ITEM_LIST_PADDING;
 //	switch (self.details.priority) {
@@ -96,9 +101,11 @@
 //	}
 //	[textColor set];
 //	[self drawText:self.details.content atPoint:pt withFont:[UIFont systemFontOfSize:CONTENT_FONT_SIZE] forWidth:rect.size.width];
+	DLog (@"end Drawing Cell Content");
 }
 
 -(CGFloat) cellHeightForWidth:(CGFloat) width {	
+	DLog (@"start Calculate Cell Height");
 	width -= 40;
 	width -= ((self.details.indent - 1) * INDENT_SIZE);
 	if (self.details.labels) {
@@ -113,6 +120,7 @@
 	else {
 		return ITEM_LIST_TOP_BORDER + ITEM_LIST_BOTTOM_BORDER;
 	}
+	DLog (@"end Calculate Cell Height");
 }
 
 

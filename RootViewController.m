@@ -21,8 +21,10 @@
 @synthesize projects;
 @synthesize labels;
 @synthesize connectionHandlers;
-@synthesize projectsNeedReloading;
-@synthesize labelsNeedReloading;
+@synthesize loadedData;
+@synthesize uncompleteItems;
+@synthesize completeItems;
+@synthesize api_token;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,16 +36,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-}
-
--(void) connectionDidFinishLoading:(int) connectionId withData:(NSData*) requestData 
-{
-	switch (connectionId) {
-		default:
-			break;
-	}
-	
-	[connectionHandlers removeObjectForKey:[NSNumber numberWithInt:connectionId]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -98,9 +90,136 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
     // Navigation logic may go here -- for example, create and push another view controller.
-	ItemListViewController* viewController = [[ItemListViewController alloc] initWithStyle:UITableViewStylePlain];
-	viewController.projectId = [(DMProjectItem*)[[self projects] objectAtIndex:indexPath.row] id];
-	viewController.labels = self.labels;
+	// retrieve the data for the selected item.
+	long projectId = [(DMProjectItem*)[[self projects] objectAtIndex:indexPath.row] id];
+
+	[self setLoadedData:0];
+	
+	DLog (@"Initialising request for incomplete and complete items");
+	NSString* incompleteItemsUrl = [NSString stringWithFormat:@"http://todoist.com/API/getUncompletedItems?project_id=%ld&token=%@", projectId, self.api_token];
+	NSString* completeItemsUrl = [NSString stringWithFormat:@"http://todoist.com/API/getCompletedItems?project_id=%ld&token=%@", projectId, self.api_token];
+	
+	NSURLRequest* incompleteRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:incompleteItemsUrl]
+													   cachePolicy:NSURLRequestUseProtocolCachePolicy
+												   timeoutInterval:60.0];
+	NSURLRequest* completeRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:completeItemsUrl]
+													 cachePolicy:NSURLRequestUseProtocolCachePolicy
+												 timeoutInterval:60.0];
+
+	XConnectionHandler* uncompleteConnectionHandler = [[XConnectionHandler alloc] initWithId:UNCOMPLETE_ITEMS_CONNECTION_ID andDelegate:self];
+	NSURLConnection* uncompleteConnection = [[NSURLConnection alloc] initWithRequest:incompleteRequest delegate:uncompleteConnectionHandler];
+	if (uncompleteConnection) {
+		[connectionHandlers setObject:uncompleteConnectionHandler forKey:[NSNumber numberWithInt:UNCOMPLETE_ITEMS_CONNECTION_ID]];
+	}
+	else {
+		// Handle Errors
+		DLog(@"Error adding uncomplete items connection request");
+	}
+	[uncompleteConnectionHandler release];
+	
+	XConnectionHandler* completeConnectionHandler = [[XConnectionHandler alloc] initWithId:COMPLETE_ITEMS_CONNECTION_ID andDelegate:self];
+	NSURLConnection* completeConnection = [[NSURLConnection alloc] initWithRequest:completeRequest delegate:completeConnectionHandler];
+	if (completeConnection) {
+		[connectionHandlers setObject:completeConnectionHandler forKey:[NSNumber numberWithInt:COMPLETE_ITEMS_CONNECTION_ID]];
+	}
+	else {
+		// Handle Errors
+		DLog(@"Error adding complete items connection request");
+	}
+	[completeConnectionHandler release];
+}
+
+-(void) connectionDidFailLoading:(int)connectionId withError:(NSError *)error
+{
+	
+}
+
+-(void) connectionDidFinishLoading:(int) connectionId withData:(NSData*) requestData 
+{
+	switch (connectionId) {
+		case UNCOMPLETE_ITEMS_CONNECTION_ID:
+		{
+			DLog(@"finished loading uncomplete items.  Processing downloaded data");
+			[self loadUncompleteItems:requestData];
+		}
+			break;
+		case COMPLETE_ITEMS_CONNECTION_ID:
+		{
+			DLog(@"finished loading complete items.  Processing downloaded data");
+			[self loadCompleteItems:requestData];
+		}
+			break;
+	}
+	
+	if (loadedData & (UNCOMPLETE_ITEMS_CONNECTION_DATA | COMPLETE_ITEMS_CONNECTION_DATA)) {
+		[self loadNextPage];
+	}
+}
+
+-(void) loadUncompleteItems:(NSData*) requestData
+{
+	NSString* jsonData = [[NSString alloc] initWithData:requestData encoding:NSUTF8StringEncoding];	
+	NSMutableArray* tempArray = [NSMutableArray arrayWithCapacity:1];
+	
+	// Iterate through each of the uncomplete items and build the list of data for each cell
+	for (NSDictionary* item in [jsonData JSONValue]) {
+		DMTaskItem* taskItem = [[DMTaskItem alloc] init];
+		
+		[taskItem setCompleted:NO];
+		[taskItem setContent:[item objectForKey:@"content"]];
+		[taskItem setIndent:[[item objectForKey:@"indent"] intValue]];
+		NSMutableArray* labelArray = [NSMutableArray array];
+		for (NSDecimalNumber* labelId in [item objectForKey:@"labels"]) {
+			[labelArray addObject:[@"@" stringByAppendingString:[[labels objectForKey:labelId] name]]];
+		}
+		NSString* labelString = ([labelArray count]?[labelArray componentsJoinedByString:@" "]:@"-");
+		DLog(@"labels:%@", labelString);
+		[taskItem setLabels:labelString];
+		
+		[tempArray addObject:[taskItem retain]];
+		[taskItem release];
+	}
+	
+	uncompleteItems = [[NSArray arrayWithArray:tempArray] retain];
+	
+	loadedData |= UNCOMPLETE_ITEMS_CONNECTION_DATA;
+}
+
+-(void) loadCompleteItems:(NSData*) requestData
+{
+	NSString* jsonData = [[NSString alloc] initWithData:requestData encoding:NSUTF8StringEncoding];	
+	NSMutableArray* tempArray = [NSMutableArray arrayWithCapacity:1];
+	
+	// Iterate through each of the uncomplete items and build the list of data for each cell
+	for (NSDictionary* item in [jsonData JSONValue]) {
+		DMTaskItem* taskItem = [[DMTaskItem alloc] init];
+		
+		[taskItem setCompleted:YES];
+		[taskItem setContent:[item objectForKey:@"content"]];
+		[taskItem setIndent:[[item objectForKey:@"indent"] intValue]];
+		NSMutableArray* labelArray = [NSMutableArray array];
+		for (NSDecimalNumber* labelId in [item objectForKey:@"labels"]) {
+			[labelArray addObject:[@"@" stringByAppendingString:[[labels objectForKey:labelId] name]]];
+		}
+		NSString* labelString = [labelArray componentsJoinedByString:@" "];
+		DLog(@"labels:%@", labelString);
+		[taskItem setLabels:labelString];
+		
+		[tempArray addObject:[taskItem retain]];
+		[taskItem release];
+	}
+	
+	completeItems = [[NSArray arrayWithArray:tempArray] retain];
+	
+	loadedData |= COMPLETE_ITEMS_CONNECTION_DATA;
+}
+
+-(void) loadNextPage
+{
+	DLog (@"Finished loading all items.  Loading ItemListViewController");
+	ItemListViewController* viewController = [[ItemListViewController alloc] initWithStyle:UITableViewStyleGrouped];
+	viewController.itemList = [[NSArray alloc] initWithObjects:uncompleteItems, completeItems, nil];
+	viewController.labels = [[self labels] retain];
 	[self.navigationController pushViewController:viewController animated:YES];
 	[viewController release];
 }
@@ -109,37 +228,6 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 
 - (void)dealloc {
     [super dealloc];

@@ -41,18 +41,33 @@
 		
 		self.title = @"Item";
 
-		labelFont = [UIFont systemFontOfSize:LABEL_FONT_SIZE];
-		contentFont = [UIFont systemFontOfSize:CONTENT_FONT_SIZE];
+		labelFont			= [[UIFont systemFontOfSize:LABEL_FONT_SIZE] retain];
+		contentFont			= [[UIFont systemFontOfSize:CONTENT_FONT_SIZE] retain];
 
-		backgroundColor		= [UIColor colorForHex:@"FFFEFF"];
-		labelColor			= [UIColor colorForHex:@"008800"];
-		dateColor			= [UIColor colorForHex:@"262626"];
-		priority1Color		= [UIColor colorForHex:@"FF0000"];
-		priority2Color		= [UIColor colorForHex:@"0079B5"];
-		priority3Color		= [UIColor colorForHex:@"008800"];
-		priority4Color		= [UIColor colorForHex:@"262626"];
+		backgroundColor		= [[UIColor colorForHex:@"FFFEFF"] retain];
+		labelColor			= [[UIColor colorForHex:@"008800"] retain];
+		dateColor			= [[UIColor colorForHex:@"262626"] retain];
+		priority1Color		= [[UIColor colorForHex:@"FF0000"] retain];
+		priority2Color		= [[UIColor colorForHex:@"0079B5"] retain];
+		priority3Color		= [[UIColor colorForHex:@"008800"] retain];
+		priority4Color		= [[UIColor colorForHex:@"262626"] retain];
 	}
     return self;
+}
+
+- (void)dealloc {
+	[labels release];
+	[itemList release];
+	[labelFont release];
+	[contentFont release];
+	[backgroundColor release];
+	[labelColor release];
+	[dateColor release];
+	[priority1Color release];
+	[priority2Color release];
+	[priority3Color release];
+	[priority4Color release];
+    [super dealloc];
 }
 
 - (void)viewDidLoad {
@@ -60,117 +75,6 @@
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-	[self initLoadItems];
-}
-
--(void) initLoadItems
-{
-	DLog (@"Start ItemListViewController::initLoadItems");
-	[itemList release];	
-	itemList = [[NSMutableArray alloc] initWithObjects: [[NSArray alloc] init], [[NSArray alloc] init], nil];
-	
-	TodoistAppDelegate* delegate = [[UIApplication sharedApplication] delegate];
-	NSString* api_token = delegate.userDetails.api_token;
-	
-	NSString* incompleteItemsUrl = [NSString stringWithFormat:@"http://todoist.com/API/getUncompletedItems?project_id=%ld&token=%@", self.projectId, api_token];
-	NSString* completeItemsUrl = [NSString stringWithFormat:@"http://todoist.com/API/getCompletedItems?project_id=%ld&token=%@", self.projectId, api_token];
-	
-	NSURLRequest* incompleteRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:incompleteItemsUrl]
-													   cachePolicy:NSURLRequestUseProtocolCachePolicy
-												   timeoutInterval:60.0];
-	NSURLRequest* completeRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:completeItemsUrl]
-													   cachePolicy:NSURLRequestUseProtocolCachePolicy
-												   timeoutInterval:60.0];
-	
-	XConnectionHandler* uncompleteConnectionHandler = [[XConnectionHandler alloc] initWithId:UNCOMPLETE_ITEMS_CONNECTION_ID andDelegate:self];
-	NSURLConnection* uncompleteConnection = [[NSURLConnection alloc] initWithRequest:incompleteRequest delegate:uncompleteConnectionHandler];
-	if (uncompleteConnection) {
-		[connections setObject:uncompleteConnectionHandler forKey:[NSNumber numberWithInt:UNCOMPLETE_ITEMS_CONNECTION_ID]];
-	}
-	else {
-		// Handle Errors
-	}
-	[uncompleteConnectionHandler release];
-	
-	XConnectionHandler* completeConnectionHandler = [[XConnectionHandler alloc] initWithId:COMPLETE_ITEMS_CONNECTION_ID andDelegate:self];
-	NSURLConnection* completeConnection = [[NSURLConnection alloc] initWithRequest:completeRequest delegate:completeConnectionHandler];
-	if (completeConnection) {
-		[connections setObject:completeConnectionHandler forKey:[NSNumber numberWithInt:COMPLETE_ITEMS_CONNECTION_ID]];
-	}
-	else {
-		// Handle Errors
-	}
-	[completeConnectionHandler release];
-}
-
--(void) connectionDidFinishLoading:(int) connectionId withData:(NSData*) requestData {
-	switch (connectionId) {
-		case UNCOMPLETE_ITEMS_CONNECTION_ID:
-		{
-			[self loadUncompleteItems:requestData];
-		}
-			break;
-		case COMPLETE_ITEMS_CONNECTION_ID:
-		{
-			[self loadCompleteItems:requestData];
-		}
-			break;
-		default:
-			break;
-	}
-}
-
--(void) loadUncompleteItems:(NSData*) data {
-	NSString* jsonData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];	
-	NSMutableArray* uncompleteItems = [NSMutableArray arrayWithCapacity:1];
-	
-	// Iterate through each of the uncomplete items and build the list of data for each cell
-	for (NSDictionary* item in [jsonData JSONValue]) {
-		DMTaskItem* taskItem = [[DMTaskItem alloc] init];
-		
-		[taskItem setCompleted:NO];
-		[taskItem setContent:[item objectForKey:@"content"]];
-		[taskItem setIndent:[[item objectForKey:@"indent"] intValue]];
-		NSMutableArray* labelArray = [NSMutableArray array];
-		for (NSDecimalNumber* labelId in [item objectForKey:@"labels"]) {
-			[labelArray addObject:[@"@" stringByAppendingString:[[labels objectForKey:labelId] name]]];
-		}
-		NSString* labelString = [labelArray componentsJoinedByString:@" "];
-		DLog(@"labels:%@", labelString);
-		[taskItem setLabels:labelString];
-		
-		[uncompleteItems addObject:[taskItem retain]];
-		[taskItem release];
-	}
-	
-	[itemList replaceObjectAtIndex:0 withObject:uncompleteItems];
-	[[self tableView] reloadData];	
-}
-
--(void) loadCompleteItems:(NSData*) data {
-	NSString* jsonData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];	
-	NSMutableArray* completeItems = [[NSMutableArray alloc] initWithCapacity:1];
-		
-	for (id item in [jsonData JSONValue]) {
-		DMTaskItem* taskItem = [[DMTaskItem alloc] init];
-		
-		[taskItem setCompleted:YES];
-		[taskItem setContent:[item objectForKey:@"content"]];
-		[taskItem setIndent:[[item objectForKey:@"indent"] intValue]];
-		NSMutableArray* labelArray = [NSMutableArray array];
-		for (NSDecimalNumber* labelId in [item objectForKey:@"labels"]) {
-			[labelArray addObject:[@"@" stringByAppendingString:[[labels objectForKey:labelId] name]]];
-		}
-		NSString* labelString = [labelArray componentsJoinedByString:@" "];
-		DLog(@"labels:%@", labelString);
-		[taskItem setLabels:labelString];
-		
-		[completeItems addObject:[taskItem retain]];
-		[taskItem release];
-	}
-	
-	[itemList replaceObjectAtIndex:1 withObject:completeItems];
-	[[self tableView] reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -189,13 +93,13 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return [itemList count];
+	return [self.itemList count];
 }
 
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[itemList objectAtIndex:section] count];
+    return [[self.itemList objectAtIndex:section] count];
 }
 
 
@@ -211,7 +115,7 @@
     
     // Set up the cell...
 	cell.cellDelegate = self;
-	cell.details = [[itemList objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+	cell.details = [[self.itemList objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
 		
     return cell;
 }
@@ -225,7 +129,7 @@
     }
 	
 	cell.cellDelegate = self;
-	cell.details = [[itemList objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+	cell.details = [[self.itemList objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
 	CGFloat height = [cell cellHeightForWidth:320.0];
 	
 	return height;
@@ -246,10 +150,6 @@
     return YES;
 }
 
-
-- (void)dealloc {
-    [super dealloc];
-}
 
 // ItemListTableViewCellDelegate methods
 -(UIFont*) fontForId:(int) fontID {

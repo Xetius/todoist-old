@@ -12,9 +12,9 @@
 #import "XConnectionHandler.h"
 #import "ItemListTableViewCell.h"
 
-@interface ItemListViewController : UITableViewController<XConnectionHandlerDelegate,ItemListTableViewCellDelegate> {
+@interface ItemListViewController : UITableViewController<ItemListTableViewCellDelegate> {
 	long projectId;
-	NSMutableArray* itemList;
+	NSArray* itemList;
 	XActivityIndicator* activity;
 	NSDictionary* labels;
 	NSMutableDictionary* connections;
@@ -32,7 +32,7 @@
 }
 
 @property (assign) long projectId;
-@property (retain) NSMutableArray* itemList;
+@property (retain) NSArray* itemList;
 @property (retain) NSDictionary* labels;
 @property (retain) NSMutableDictionary* connections;
 @property (retain) XActivityIndicator* activity;

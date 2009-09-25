@@ -12,17 +12,23 @@
 	NSArray* projects;
 	NSDictionary* labels;
 	NSMutableDictionary* connectionHandlers;
+	int loadedData;
+	NSArray* uncompleteItems;
+	NSArray* completeItems;
+	NSString* api_token;
 }
 
 @property (retain) NSArray* projects;
 @property (retain) NSDictionary* labels;
 @property (retain) NSMutableDictionary* connectionHandlers;
-@property (assign) BOOL projectsNeedReloading;
-@property (assign) BOOL labelsNeedReloading;
+@property (assign) int loadedData;
+@property (retain) NSArray* uncompleteItems;
+@property (retain) NSArray* completeItems;
+@property (retain) NSString* api_token;
 
--(void) initLoadData;
 -(void) connectionDidFinishLoading:(int) connectionId withData:(NSData*) requestData;
--(void) loadProjectData:(NSData*) requestData;
--(void) loadLabelsData:(NSData*) requestData;
+-(void) loadUncompleteItems:(NSData*) requestData;
+-(void) loadCompleteItems:(NSData*) requestData;
+-(void) loadNextPage;
 
 @end
