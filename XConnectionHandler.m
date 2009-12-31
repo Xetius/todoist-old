@@ -12,17 +12,28 @@
 
 @synthesize connectionId;
 @synthesize delegate;
+@synthesize requestDelegate;
 @synthesize requestData;
+@synthesize projectId;
 
 -(id) initWithId:(int) newConnectionId andDelegate:(NSObject<XConnectionHandlerDelegate>*) newDelegate
 {
 	if (self = [super init]) {
-		delegate = newDelegate;
+		delegate = [newDelegate retain];
 		connectionId = newConnectionId;
 		requestData = [[NSMutableData data] retain];
+		requestDelegate = nil;
+		projectId = 0;
 	}
 
 	return self;
+}
+
+-(void) dealloc {
+	[delegate release];
+	[requestDelegate release];
+	[requestData release];
+	[super dealloc];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
@@ -40,20 +51,34 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     DLog (@"XConnectionHandler::connection:didFailWithError");
-	[connection release];
     [requestData release];
+	[connection release];
 	
     // inform the user
     DLog(@"Connection failed! Error - %@ %@",
           [error localizedDescription],
           [[error userInfo] objectForKey:NSErrorFailingURLStringKey]);
-	[delegate connectionDidFailLoading:[self connectionId] withError:error]; 
+
+	if (projectId != 0) {
+		[delegate connectionDidFailLoading:[self connectionId] withError:error andProjectId:projectId];
+	}
+	else {
+		[delegate connectionDidFailLoading:[self connectionId] withError:error];
+	}
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     DLog (@"XConnectionHandler::connectiondidFinishLoading");
-	[delegate connectionDidFinishLoading:[self connectionId] withData:[self requestData]];
+	if (projectId != 0) {
+		DLog (@"Calling connectionDidFinishLoading with project id:%d", [self projectId]);
+		[delegate connectionDidFinishLoading:[self connectionId] withData:[self requestData] andProjectId:[self projectId]];
+	}
+	else {
+		DLog (@"Calling connectionDidFinishLoading without project id");
+		[delegate connectionDidFinishLoading:[self connectionId] withData:[self requestData]];
+	}
+
 }
 
 @end

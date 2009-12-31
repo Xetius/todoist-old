@@ -10,31 +10,37 @@
 
 @implementation XActivityIndicator
 
+@synthesize overlay;
+@synthesize back;
+@synthesize indicator;
+@synthesize label;
+
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         // Initialization code
 		self.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
 		self.alpha = 0;
-		UIImage* overlay = [[UIImage imageNamed:@"overlay.png"]stretchableImageWithLeftCapWidth:15 topCapHeight:15];
-		UIImageView* back = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 150, 120)];
+		overlay = [[UIImage imageNamed:@"overlay.png"]stretchableImageWithLeftCapWidth:15 topCapHeight:15];
+		back = [[UIImageView alloc]initWithFrame:CGRectMake(85, 180, 150, 120)];
 		back.alpha = 0.7;
 		[back setImage:overlay];
 		[self addSubview:back];
 		[back release];
-		UIActivityIndicatorView* indicator = [[UIActivityIndicatorView alloc]init];
-		[indicator setCenter:CGPointMake(75,45)];
+		indicator = [[UIActivityIndicatorView alloc]init];
+		[indicator setCenter:CGPointMake(160,240)];
 		[indicator setBounds:CGRectMake(0, 0, 37, 37)];
 		[indicator setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
 		[self addSubview:indicator];
 		[indicator startAnimating];
 		[indicator release];
-		UILabel* label = [[UILabel alloc]initWithFrame:CGRectMake(10, 70, 130, 25)];
+		label = [[UILabel alloc]initWithFrame:CGRectMake(95, 265, 130, 25)];
 		label.textAlignment = UITextAlignmentCenter;
 		label.text = @"Loading";
 		label.textColor = [UIColor whiteColor];
 		label.font = [UIFont boldSystemFontOfSize:19];
 		label.opaque = NO;
 		label.backgroundColor = [UIColor clearColor];
+		label.adjustsFontSizeToFitWidth = YES;
 		[self addSubview:label];
 		[label release];		
     }
@@ -44,6 +50,10 @@
 
 - (void)drawRect:(CGRect)rect {
     // Drawing code
+}
+
+-(void) setText:(NSString*) newText {
+	label.text = newText;
 }
 
 - (void)dealloc {

@@ -6,7 +6,6 @@
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/TodoistAppDelegate.o
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RootViewController.o
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SplashScreen.o
-/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XActivityIndicator.o
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSString+SBJSON.o
@@ -18,5 +17,9 @@
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ProjectItemTableViewCell.o
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/UIColor+Hex.o
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RegexKitLite.o
-/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListTableViewCell.o
 /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XConnectionHandler.o
+/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o
+/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XDataEngine.o
+/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/LoadingItemsTableViewCell.o
+/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewCell.o
+/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemDetailsViewController.o

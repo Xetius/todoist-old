@@ -7,48 +7,30 @@
 //
 
 #import "SplashScreen.h"
-#import "DMUserDetails.h"
 #import "XActivityIndicator.h"
-#import "XConnectionHandler.h"
+#import "XDataEngine.h"
 
-@interface TodoistAppDelegate : NSObject <UIApplicationDelegate, XConnectionHandlerDelegate> {
+@interface TodoistAppDelegate : NSObject <UIApplicationDelegate, XDataEngineDelegate> {
     
 	XActivityIndicator* largeActivityIndicator;
 	SplashScreen* splashScreen;
     UIWindow *window;
     UINavigationController *navigationController;
 	
-	DMUserDetails* userDetails;
-	NSArray* projects;
-	NSDictionary* labels;
-	
-	BOOL isLoggedIn;
-	
-	NSMutableDictionary* connectionHandlers;
-	int connectionLoaded;
+	XDataEngine* engine;
 }
 
 @property (nonatomic, retain) XActivityIndicator* largeActivityIndicator;
 @property (nonatomic, retain) SplashScreen* splashScreen;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
-@property (retain) DMUserDetails* userDetails;
-@property (retain) NSArray* projects;
-@property (retain) NSDictionary* labels;
-@property (assign) BOOL isLoggedIn;
-@property (retain) NSMutableDictionary* connectionHandlers;
-@property (assign) int connectionLoaded;
+@property (nonatomic, retain) XDataEngine* engine;
 
--(void) beginLogon;
 -(void) showSplashScreen:(BOOL) show;
 -(void) createSplashScreen;
 -(void) showActivityIndicator:(BOOL)show;
 -(void) showActivityIndicator:(BOOL)show withCenter:(CGPoint)point;
 -(void) createLargeActivityIndicatorView;
--(void) saveUserData:(NSData*) requestData;
--(void) initRequestsForLabelsAndProjects;
--(void) loadLabelsData:(NSData *)requestData;
--(void) loadProjectsData:(NSData *)requestData;
--(void) allDataLoaded;
+
 @end
 

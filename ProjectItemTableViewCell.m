@@ -18,9 +18,6 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-		
-        // Initialization code
-		
     }
     return self;
 }
@@ -59,8 +56,6 @@
 }
 
 - (void)drawContentView:(CGRect) r {
-	DLog (@"drawContentRect");
-
 	// subclasses must implement this
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	UIColor* backgroundColor	= [UIColor colorForHex:@"FFFEFF"];
@@ -73,13 +68,11 @@
 	}
 	
 	[backgroundColor set];
-	DLog (@"Fill Rect");
 	CGContextFillRect(context, r);
 	
 	// Rectangle r contains the whole bounds of the cell rectangle.
 	// We need to offset the cell correctly
 	double offset = (INDENT_SIZE * ([self indent] - 1.0));
-	DLog (@"Indent Offset: %f", offset);
 	r.origin.x += offset;
 	r.size.width -= offset;
 	

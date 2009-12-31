@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XConnectionHandler.h"
 
 @interface DMTaskItem : NSObject {
 
@@ -14,13 +15,21 @@
 	BOOL	  completed;	
 	int		  priority;
 	int		  indent;
-	NSString*  labels;
+	NSArray*  labels;
+	NSString* display_date;
+	NSString* entered_date;
+	int		  type;
 }
 
 @property (assign) BOOL completed;
 @property (assign) int indent;
 @property (assign) int priority;
 @property (retain) NSString* content;
-@property (retain) NSString* labels;
+@property (retain) NSArray*  labels;
+@property (retain) NSString* display_date;
+@property (retain) NSString* entered_date;
+@property (assign) int type;
+
+-(NSString*) labelStringWithDelegate:(NSObject<XDataEngineDelegate>*) delegate;
 
 @end

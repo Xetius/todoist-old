@@ -19,8 +19,6 @@
 
 @end
 
-
-
 @implementation XTableViewCellBase
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {

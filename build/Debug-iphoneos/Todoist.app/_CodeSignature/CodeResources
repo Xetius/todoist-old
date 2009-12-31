@@ -16,9 +16,17 @@
 		<data>
 		7vkUrDxlMWkvXoAixkVivtuS6tY=
 		</data>
+		<key>ItemListViewCell.nib</key>
+		<data>
+		iB9LJMVPnqujL/+YfAeZV8hyM/U=
+		</data>
+		<key>LoadingItemsTableViewCell.nib</key>
+		<data>
+		pr73dttXRh1BnQtVrS2+5wbP20I=
+		</data>
 		<key>MainWindow.nib</key>
 		<data>
-		9P22CRLbF7I32lbT6lo2CvMwz2s=
+		p1/F+WLlwP3CnFmXkBJv6bRUwuA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -34,7 +42,7 @@
 		</data>
 		<key>SplashScreen.nib</key>
 		<data>
-		PHxRvkZ7QXujRg3j/gsSiityghw=
+		pWaxO0mh8pUXz6elbdwCgdN7SRQ=
 		</data>
 		<key>Title.png</key>
 		<data>
@@ -50,7 +58,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		DdGx/QAaAnsgMhgwph45lKuBcJ0=
+		Y838hmRVSxWvoEs12UWFpSz5M84=
 		</data>
 		<key>icon.png</key>
 		<data>

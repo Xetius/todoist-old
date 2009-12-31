@@ -10,10 +10,19 @@
 
 
 @interface XActivityIndicator : UIView {
-
+	UIImage* overlay;
+	UIImageView* back;
+	UIActivityIndicatorView* indicator;
+	UILabel* label;
 }
 
--(void)showActivityIndicator:(BOOL)show;
--(void)showActivityIndicator:(BOOL)show withCenter:(CGPoint)point;
+@property (retain) UIImage* overlay;
+@property (retain) UIImageView* back;
+@property (retain) UIActivityIndicatorView* indicator;
+@property (retain) UILabel* label;
+
+-(void) showActivityIndicator:(BOOL)show;
+-(void) showActivityIndicator:(BOOL)show withCenter:(CGPoint)point;
+-(void) setText:(NSString *)newText;
 
 @end
