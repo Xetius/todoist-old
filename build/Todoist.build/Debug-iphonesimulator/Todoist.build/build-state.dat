@@ -1,53 +1,53 @@
 TTodoist
 v7
 r0
-t283973319.076473
+t286803350.329364
 cCheck dependencies
-cProcessInfoPlistFile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/Info.plist Todoist-Info.plist
-cCompileXIB /Users/chris/Dropbox/Development/Todoist-PreGetRequests/MainWindow.xib
+cProcessInfoPlistFile /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Info.plist Todoist-Info.plist
+cCompileXIB /Users/chris/Dropbox/Development/Todoist/MainWindow.xib
 cCpResource build/Debug-iphonesimulator/Todoist.app/Default.psd Images/Default.psd
 cCpResource build/Debug-iphonesimulator/Todoist.app/Icon-Settings.png Images/Icon-Settings.png
 cCpResource build/Debug-iphonesimulator/Todoist.app/icon.png Images/icon.png
 cCpResource build/Debug-iphonesimulator/Todoist.app/icon.psd Images/icon.psd
 cCpResource build/Debug-iphonesimulator/Todoist.app/Todoist.ai Images/Todoist.ai
 cCpResource build/Debug-iphonesimulator/Todoist.app/Todoist.png Images/Todoist.png
-cCompileXIB /Users/chris/Dropbox/Development/Todoist-PreGetRequests/SplashScreen.xib
+cCompileXIB /Users/chris/Dropbox/Development/Todoist/SplashScreen.xib
 cCpResource build/Debug-iphonesimulator/Todoist.app/Default.png Default.png
 cCpResource build/Debug-iphonesimulator/Todoist.app/Title.png Title.png
 cCpResource build/Debug-iphonesimulator/Todoist.app/overlay.png Images/overlay.png
 cCpResource build/Debug-iphonesimulator/Todoist.app/Settings.bundle Settings.bundle
-cCompileXIB /Users/chris/Dropbox/Development/Todoist-PreGetRequests/LoadingItemsTableViewCell.xib
-cCompileXIB /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewCell.xib
-cCompileXIB /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemDetailsViewController.xib
-cProcessPCH /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch.gch Todoist_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/main.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMUserDetails.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMUserDetails.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMTaskItem.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMTaskItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMProjectItem.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMProjectItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMLabelItem.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMLabelItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/TodoistAppDelegate.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/TodoistAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RootViewController.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SplashScreen.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/SplashScreen.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XActivityIndicator.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XActivityIndicator.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSString+SBJSON.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJSON.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonBase.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonParser.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonWriter.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XTableViewCellBase.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XTableViewCellBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ProjectItemTableViewCell.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ProjectItemTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/UIColor+Hex.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/UIColor+Hex.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RegexKitLite.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/RegexKitLite.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XConnectionHandler.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XConnectionHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XDataEngine.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XDataEngine.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/LoadingItemsTableViewCell.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/LoadingItemsTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewCell.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemDetailsViewController.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemDetailsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/Todoist normal i386
-cGenerateDSYMFile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app.dSYM /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/Todoist
-cTouch /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app
+cCompileXIB /Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.xib
+cCompileXIB /Users/chris/Dropbox/Development/Todoist/ItemListViewCell.xib
+cCompileXIB /Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.xib
+cProcessPCH /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch.gch Todoist_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/main.o /Users/chris/Dropbox/Development/Todoist/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMUserDetails.o /Users/chris/Dropbox/Development/Todoist/DMUserDetails.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMTaskItem.o /Users/chris/Dropbox/Development/Todoist/DMTaskItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMProjectItem.o /Users/chris/Dropbox/Development/Todoist/DMProjectItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMLabelItem.o /Users/chris/Dropbox/Development/Todoist/DMLabelItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/TodoistAppDelegate.o /Users/chris/Dropbox/Development/Todoist/TodoistAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RootViewController.o /Users/chris/Dropbox/Development/Todoist/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SplashScreen.o /Users/chris/Dropbox/Development/Todoist/SplashScreen.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XActivityIndicator.o /Users/chris/Dropbox/Development/Todoist/XActivityIndicator.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o /Users/chris/Dropbox/Development/Todoist/JSON/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSString+SBJSON.o /Users/chris/Dropbox/Development/Todoist/JSON/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJSON.o /Users/chris/Dropbox/Development/Todoist/JSON/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonBase.o /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonParser.o /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonWriter.o /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XTableViewCellBase.o /Users/chris/Dropbox/Development/Todoist/XTableViewCellBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ProjectItemTableViewCell.o /Users/chris/Dropbox/Development/Todoist/ProjectItemTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/UIColor+Hex.o /Users/chris/Dropbox/Development/Todoist/UIColor+Hex.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RegexKitLite.o /Users/chris/Dropbox/Development/Todoist/RegexKitLite.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XConnectionHandler.o /Users/chris/Dropbox/Development/Todoist/XConnectionHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o /Users/chris/Dropbox/Development/Todoist/ItemListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XDataEngine.o /Users/chris/Dropbox/Development/Todoist/XDataEngine.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/LoadingItemsTableViewCell.o /Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewCell.o /Users/chris/Dropbox/Development/Todoist/ItemListViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemDetailsViewController.o /Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist normal i386
+cGenerateDSYMFile /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app.dSYM /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist
+cTouch /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk
 c000000004A7690A400000000000000EE
@@ -1244,6 +1244,649 @@ t1253635684
 s367
 i<UIKit/UIKit.h>
 
+N/Users/chris/Dropbox/Development/Todoist/DMLabelItem.h
+c000000004AC11F9200000000000001B2
+t1254170514
+s434
+i<Foundation/Foundation.h>
+
+N/Users/chris/Dropbox/Development/Todoist/DMLabelItem.m
+c000000004AB8F661000000000000012B
+t1253635681
+s299
+i"DMLabelItem.h"
+
+N/Users/chris/Dropbox/Development/Todoist/DMProjectItem.h
+c000000004AB8F6610000000000000237
+t1253635681
+s567
+i<Foundation/Foundation.h>
+
+N/Users/chris/Dropbox/Development/Todoist/DMProjectItem.m
+c000000004AB8F6610000000000000178
+t1253635681
+s376
+i"DMProjectItem.h"
+
+N/Users/chris/Dropbox/Development/Todoist/DMTaskItem.h
+c000000004B3F7F570000000000000305
+t1262452567
+s773
+i<Foundation/Foundation.h>
+i"XConnectionHandler.h"
+
+N/Users/chris/Dropbox/Development/Todoist/DMTaskItem.m
+c000000004B3F7FA600000000000005D9
+t1262452646
+s1497
+i"DMTaskItem.h"
+i"RegexKitLite.h"
+i"XDataEngine.h"
+i"TodoistAppDelegate.h"
+
+N/Users/chris/Dropbox/Development/Todoist/DMUserDetails.h
+c000000004AB9409C0000000000000495
+t1253654684
+s1173
+i<Foundation/Foundation.h>
+
+N/Users/chris/Dropbox/Development/Todoist/DMUserDetails.m
+c000000004AB8F661000000000000025A
+t1253635681
+s602
+i"DMUserDetails.h"
+
+N/Users/chris/Dropbox/Development/Todoist/Default.png
+c000000004AB8F661000000000000238F
+t1253635681
+s9103
+
+N/Users/chris/Dropbox/Development/Todoist/Images/Default.psd
+c000000004AB8F661000000000003271C
+t1253635681
+s206620
+
+N/Users/chris/Dropbox/Development/Todoist/Images/Icon-Settings.png
+c000000004AB8F661000000000000023B
+t1253635681
+s571
+
+N/Users/chris/Dropbox/Development/Todoist/Images/Todoist.ai
+c000000004AB8F66100000000000216B5
+t1253635681
+s136885
+
+N/Users/chris/Dropbox/Development/Todoist/Images/Todoist.png
+c000000004AB8F66100000000000009D3
+t1253635681
+s2515
+
+N/Users/chris/Dropbox/Development/Todoist/Images/icon.png
+c000000004AB8F6620000000000000B2A
+t1253635682
+s2858
+
+N/Users/chris/Dropbox/Development/Todoist/Images/icon.psd
+c000000004AB8F66200000000000DEAED
+t1253635682
+s912109
+
+N/Users/chris/Dropbox/Development/Todoist/Images/overlay.png
+c000000004AB8F662000000000000025C
+t1253635682
+s604
+
+N/Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.h
+c000000004B425D7700000000000002C2
+t1262640503
+s706
+i<UIKit/UIKit.h>
+
+N/Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.m
+c000000004B425E0C000000000000090E
+t1262640652
+s2318
+i"ItemDetailsViewController.h"
+
+N/Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.xib
+c000000004B363169000000000000771C
+t1261842793
+s30492
+
+N/Users/chris/Dropbox/Development/Todoist/ItemListViewCell.h
+c000000004B14219400000000000001BF
+t1259610516
+s447
+i<UIKit/UIKit.h>
+
+N/Users/chris/Dropbox/Development/Todoist/ItemListViewCell.m
+c000000004B1421D40000000000000369
+t1259610580
+s873
+i"ItemListViewCell.h"
+
+N/Users/chris/Dropbox/Development/Todoist/ItemListViewCell.xib
+c000000004B1E81870000000000005D99
+t1260290439
+s23961
+
+N/Users/chris/Dropbox/Development/Todoist/ItemListViewController.h
+c000000004B425D7A00000000000001BD
+t1262640506
+s445
+i<UIKit/UIKit.h>
+i"XDataEngine.h"
+i"ItemListViewCell.h"
+
+N/Users/chris/Dropbox/Development/Todoist/ItemListViewController.m
+c000000004B425DC900000000000017F8
+t1262640585
+s6136
+i"TodoistAppDelegate.h"
+i"ItemListViewController.h"
+i"LoadingItemsTableViewCell.h"
+i"ItemDetailsViewController.h"
+i"DMTaskItem.h"
+i"UIColor+Hex.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/JSON.h
+c000000004AB8F66200000000000008F9
+t1253635682
+s2297
+i"SBJSON.h"
+i"NSObject+SBJSON.h"
+i"NSString+SBJSON.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/NSObject+SBJSON.h
+c000000004AB8F6620000000000000A01
+t1253635682
+s2561
+i<Foundation/Foundation.h>
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/NSObject+SBJSON.m
+c000000004AB8F662000000000000089C
+t1253635682
+s2204
+i"NSObject+SBJSON.h"
+i"SBJsonWriter.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/NSString+SBJSON.h
+c000000004AB8F6620000000000000916
+t1253635682
+s2326
+i<Foundation/Foundation.h>
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/NSString+SBJSON.m
+c000000004AB8F662000000000000087C
+t1253635682
+s2172
+i"NSString+SBJSON.h"
+i"SBJsonParser.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/SBJSON.h
+c000000004AB8F6620000000000000AED
+t1253635682
+s2797
+i<Foundation/Foundation.h>
+i"SBJsonParser.h"
+i"SBJsonWriter.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/SBJSON.m
+c000000004AB8F6620000000000001ABC
+t1253635682
+s6844
+i"SBJSON.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonBase.h
+c000000004AB8F6620000000000000B82
+t1253635682
+s2946
+i<Foundation/Foundation.h>
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonBase.m
+c000000004AB8F6620000000000000AC1
+t1253635682
+s2753
+i"SBJsonBase.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonParser.h
+c000000004AB8F6620000000000000C0B
+t1253635682
+s3083
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonParser.m
+c000000004AB8F66200000000000036CF
+t1253635682
+s14031
+i"SBJsonParser.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonWriter.h
+c000000004AB8F6620000000000001140
+t1253635682
+s4416
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonWriter.m
+c000000004AB8F6620000000000001E83
+t1253635682
+s7811
+i"SBJsonWriter.h"
+
+N/Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.h
+c000000004ACDE87600000000000001AC
+t1255008374
+s428
+i<UIKit/UIKit.h>
+
+N/Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.m
+c000000004ACDE6CB00000000000002D4
+t1255007947
+s724
+i"LoadingItemsTableViewCell.h"
+
+N/Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.xib
+c000000004ACDF05F0000000000004A49
+t1255010399
+s19017
+
+N/Users/chris/Dropbox/Development/Todoist/MainWindow.xib
+c000000004AB8F6620000000000002580
+t1253635682
+s9600
+
+N/Users/chris/Dropbox/Development/Todoist/ProjectItemTableViewCell.h
+c000000004B5CAD810000000000000214
+t1264364929
+s532
+i<UIKit/UIKit.h>
+i"XTableViewCellBase.h"
+
+N/Users/chris/Dropbox/Development/Todoist/ProjectItemTableViewCell.m
+c000000004B5CAE620000000000000EB2
+t1264365154
+s3762
+i"ProjectItemTableViewCell.h"
+i"UIColor+Hex.h"
+
+N/Users/chris/Dropbox/Development/Todoist/RegexKitLite.h
+c000000004AB8F66200000000000027D4
+t1253635682
+s10196
+i<Foundation/NSArray.h>
+i<Foundation/NSError.h>
+i<Foundation/NSObjCRuntime.h>
+i<Foundation/NSRange.h>
+i<Foundation/NSString.h>
+i<limits.h>
+i<stdint.h>
+i<sys/types.h>
+i<TargetConditionals.h>
+i<AvailabilityMacros.h>
+
+N/Users/chris/Dropbox/Development/Todoist/RegexKitLite.m
+c000000004AB8F662000000000001B315
+t1253635682
+s111381
+i<CoreFoundation/CFBase.h>
+i<CoreFoundation/CFArray.h>
+i<CoreFoundation/CFString.h>
+i<Foundation/NSArray.h>
+i<Foundation/NSDictionary.h>
+i<Foundation/NSError.h>
+i<Foundation/NSException.h>
+i<Foundation/NSNotification.h>
+i<Foundation/NSRunLoop.h>
+i<Foundation/NSGarbageCollector.h>
+i<objc/runtime.h>
+i<libkern/OSAtomic.h>
+i<mach-o/loader.h>
+i<AvailabilityMacros.h>
+i<dlfcn.h>
+i<string.h>
+i<stdarg.h>
+i<stdlib.h>
+i<stdio.h>
+i"RegexKitLite.h"
+
+N/Users/chris/Dropbox/Development/Todoist/RootViewController.h
+c000000004B5CA6AC0000000000000132
+t1264363180
+s306
+i"XConnectionHandler.h"
+
+N/Users/chris/Dropbox/Development/Todoist/RootViewController.m
+c000000004B5CADA700000000000013A5
+t1264364967
+s5029
+i"ProjectItemTableViewCell.h"
+i"LoadingItemsTableViewCell.h"
+i"TodoistAppDelegate.h"
+i"RootViewController.h"
+i"ItemListViewController.h"
+i"UIColor+Hex.h"
+i"XConnectionHandler.h"
+i"DMProjectItem.h"
+i"DMLabelItem.h"
+i"DMTaskItem.h"
+i"JSON.h"
+
+N/Users/chris/Dropbox/Development/Todoist/Settings.bundle
+c000000004AB8F7700000000000000088
+t1253635952
+s136
+
+N/Users/chris/Dropbox/Development/Todoist/SplashScreen.h
+c000000004AB8F663000000000000018A
+t1253635683
+s394
+i<UIKit/UIKit.h>
+
+N/Users/chris/Dropbox/Development/Todoist/SplashScreen.m
+c000000004AD38B670000000000000248
+t1255377767
+s584
+i"SplashScreen.h"
+
+N/Users/chris/Dropbox/Development/Todoist/SplashScreen.xib
+c000000004AB8F6630000000000002B55
+t1253635683
+s11093
+
+N/Users/chris/Dropbox/Development/Todoist/Title.png
+c000000004AB8F6630000000000002354
+t1253635683
+s9044
+
+N/Users/chris/Dropbox/Development/Todoist/TodoistAppDelegate.h
+c000000004AD38BBF000000000000041A
+t1255377855
+s1050
+i"SplashScreen.h"
+i"XActivityIndicator.h"
+i"XDataEngine.h"
+
+N/Users/chris/Dropbox/Development/Todoist/TodoistAppDelegate.m
+c000000004AD38B130000000000000C07
+t1255377683
+s3079
+i"TodoistAppDelegate.h"
+i"RootViewController.h"
+i"JSON/JSON.h"
+
+N/Users/chris/Dropbox/Development/Todoist/Todoist_Prefix.pch
+c000000004B5CAE490000000000000844
+t1264365129
+s2116
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"XLogging.h"
+
+N/Users/chris/Dropbox/Development/Todoist/UIColor+Hex.h
+c000000004AB8F663000000000000014C
+t1253635683
+s332
+i<Foundation/Foundation.h>
+
+N/Users/chris/Dropbox/Development/Todoist/UIColor+Hex.m
+c000000004AB8F6630000000000000533
+t1253635683
+s1331
+i"UIColor+Hex.h"
+
+N/Users/chris/Dropbox/Development/Todoist/XActivityIndicator.h
+c000000004AC1B959000000000000027A
+t1254209881
+s634
+i<UIKit/UIKit.h>
+
+N/Users/chris/Dropbox/Development/Todoist/XActivityIndicator.m
+c000000004AC1B9BE000000000000092F
+t1254209982
+s2351
+i"XActivityIndicator.h"
+
+N/Users/chris/Dropbox/Development/Todoist/XConnectionHandler.h
+c000000004B3A46D100000000000004F9
+t1262110417
+s1273
+i<Foundation/Foundation.h>
+
+N/Users/chris/Dropbox/Development/Todoist/XConnectionHandler.m
+c000000004ADA2D8C00000000000008DB
+t1255812492
+s2267
+i"XConnectionHandler.h"
+
+N/Users/chris/Dropbox/Development/Todoist/XDataEngine.h
+c000000004B3BCA97000000000000074B
+t1262209687
+s1867
+i<Foundation/Foundation.h>
+i"DMUserDetails.h"
+i"XConnectionHandler.h"
+
+N/Users/chris/Dropbox/Development/Todoist/XDataEngine.m
+c000000004B3F82430000000000004FF5
+t1262453315
+s20469
+i"XDataEngine.h"
+i"JSON.h"
+i"DMProjectItem.h"
+i"DMLabelItem.h"
+i"DMTaskItem.h"
+
+N/Users/chris/Dropbox/Development/Todoist/XLogging.h
+c000000004AB8F6630000000000000321
+t1253635683
+s801
+
+N/Users/chris/Dropbox/Development/Todoist/XTableViewCellBase.h
+c000000004AB8F6630000000000000131
+t1253635683
+s305
+i<UIKit/UIKit.h>
+
+N/Users/chris/Dropbox/Development/Todoist/XTableViewCellBase.m
+c000000004ACCC5C60000000000000451
+t1254933958
+s1105
+i"XTableViewCellBase.h"
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app
+t1265110478
+s680
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app.dSYM
+t1265110478
+s102
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Default.png
+t1261658766
+s9103
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Default.psd
+t1261658765
+s206620
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Icon-Settings.png
+t1261658765
+s571
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Info.plist
+t1261658765
+s595
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/ItemDetailsViewController.nib
+t1261842803
+s4957
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/ItemListViewCell.nib
+t1261658767
+s3509
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/LoadingItemsTableViewCell.nib
+t1261658767
+s2527
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/MainWindow.nib
+t1261658766
+s1680
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/PkgInfo
+t1261658765
+s8
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Settings.bundle
+t1261658766
+s136
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/SplashScreen.nib
+t1261658766
+s2197
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Title.png
+t1261658766
+s9044
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist
+t1265110476
+s210172
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist.ai
+t1261658765
+s136885
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist.png
+t1261658765
+s2515
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/icon.png
+t1261658765
+s2858
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/icon.psd
+t1261658765
+s912109
+
+N/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/overlay.png
+t1261658766
+s604
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMLabelItem.o
+t1265110472
+s9228
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMProjectItem.o
+t1265110472
+s11388
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMTaskItem.o
+t1265110472
+s45688
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMUserDetails.o
+t1265110472
+s18956
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemDetailsViewController.o
+t1265110474
+s40524
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewCell.o
+t1265110474
+s18780
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o
+t1265110473
+s57704
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/LoadingItemsTableViewCell.o
+t1265110474
+s19696
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o
+t1265110473
+s7748
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSString+SBJSON.o
+t1265110473
+s7768
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ProjectItemTableViewCell.o
+t1265110473
+s26460
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RegexKitLite.o
+t1265110474
+s103796
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RootViewController.o
+t1265110472
+s51204
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJSON.o
+t1265110473
+s16768
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonBase.o
+t1265110473
+s12112
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonParser.o
+t1265110473
+s29824
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonWriter.o
+t1265110473
+s22044
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SplashScreen.o
+t1265110473
+s32344
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/Todoist.LinkFileList
+c000000004B3CE2A50000000000000D29
+t1262281381
+s3369
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/TodoistAppDelegate.o
+t1265110472
+s51692
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/UIColor+Hex.o
+t1265110473
+s9300
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XActivityIndicator.o
+t1265110473
+s23040
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XConnectionHandler.o
+t1265110473
+s18372
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XDataEngine.o
+t1265110474
+s65236
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XTableViewCellBase.o
+t1265110473
+s20116
+
+N/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/main.o
+t1265110472
+s5960
+
+N/Users/chris/Dropbox/Development/Todoist/main.m
+c000000004AB8F664000000000000016F
+t1253635684
+s367
+i<UIKit/UIKit.h>
+
 N/Users/chris/Dropbox/Development/TodoistTest/DMLabelItem.h
 c000000004AAE784D00000000000001B2
 t1252948045
@@ -1809,6 +2452,10 @@ t1252518226
 s367
 i<UIKit/UIKit.h>
 
+N/var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-bgfbwwvbxorsitdnxequutzddary/Todoist_Prefix.pch.gch
+t1264365134
+s13039088
+
 N/var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-calsnpquszplavfppizxgzgiibqa/Todoist_Prefix.pch.gch
 t1253653738
 s13039088
@@ -1827,6 +2474,10 @@ s13039088
 
 N/var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-eqrsoobmpjdilwboityyxwgmwvon/Todoist_Prefix.pch.gch
 t1254209056
+s13039088
+
+N/var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch.gch
+t1265110471
 s13039088
 
 N/var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-frtqgkiymgqxphgqcyfknyphqmpt/Todoist_Prefix.pch.gch
@@ -1848,7 +2499,7 @@ s886
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies283973319#283973319#0(0"0(0#1#0"7947009927035180032#0"0#
+lSLF07#2@18"Check dependencies286803350#286803350#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMLabelItem.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMLabelItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s283351570.951068
@@ -1862,6 +2513,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMLabelItem.m283351570#283351571#0(0"0(0#0#69"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMLabelItem.m4300885448#2248"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMLabelItem.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMLabelItem.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMLabelItem.o /Users/chris/Dropbox/Development/Todoist/DMLabelItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803272.787908
+e286803272.884027
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMLabelItem.o
+x/Users/chris/Dropbox/Development/Todoist/DMLabelItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/chris/Dropbox/Development/Todoist/DMLabelItem.m286803272#286803272#0(0"0(0#0#54"/Users/chris/Dropbox/Development/Todoist/DMLabelItem.m4300885448#2068"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/DMLabelItem.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMLabelItem.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMLabelItem.o /Users/chris/Dropbox/Development/TodoistTest/DMLabelItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206727.988144
@@ -1889,6 +2553,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@79"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMProjectItem.m283351570#283351570#0(0"0(0#0#71"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMProjectItem.m4300885448#2252"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMProjectItem.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMProjectItem.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMProjectItem.o /Users/chris/Dropbox/Development/Todoist/DMProjectItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803272.717353
+e286803272.787793
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMProjectItem.o
+x/Users/chris/Dropbox/Development/Todoist/DMProjectItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/chris/Dropbox/Development/Todoist/DMProjectItem.m286803272#286803272#0(0"0(0#0#56"/Users/chris/Dropbox/Development/Todoist/DMProjectItem.m4300885448#2072"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/DMProjectItem.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMProjectItem.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMProjectItem.o /Users/chris/Dropbox/Development/TodoistTest/DMProjectItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206727.950353
 e275206728.062802
@@ -1915,6 +2592,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@76"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMTaskItem.m283902487#283902487#0(0"0(0#0#68"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMTaskItem.m4300885448#2246"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMTaskItem.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMTaskItem.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMTaskItem.o /Users/chris/Dropbox/Development/Todoist/DMTaskItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803272.716017
+e286803272.818691
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMTaskItem.o
+x/Users/chris/Dropbox/Development/Todoist/DMTaskItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/chris/Dropbox/Development/Todoist/DMTaskItem.m286803272#286803272#0(0"0(0#0#53"/Users/chris/Dropbox/Development/Todoist/DMTaskItem.m4300885448#2066"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/DMTaskItem.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMTaskItem.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMTaskItem.o /Users/chris/Dropbox/Development/TodoistTest/DMTaskItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206727.883949
 e275206727.988034
@@ -1940,6 +2630,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@79"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMUserDetails.m283351570#283351570#0(0"0(0#0#71"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMUserDetails.m4300885448#2252"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/DMUserDetails.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMUserDetails.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMUserDetails.o /Users/chris/Dropbox/Development/Todoist/DMUserDetails.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803272.172786
+e286803272.717260
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMUserDetails.o
+x/Users/chris/Dropbox/Development/Todoist/DMUserDetails.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/chris/Dropbox/Development/Todoist/DMUserDetails.m286803272#286803272#0(0"0(0#0#56"/Users/chris/Dropbox/Development/Todoist/DMUserDetails.m4300885448#2072"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/DMUserDetails.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMUserDetails.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/DMUserDetails.o /Users/chris/Dropbox/Development/TodoistTest/DMUserDetails.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206727.789874
@@ -1969,6 +2672,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@91"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemDetailsViewController.m283535603#283535603#0(0"0(0#0#83"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemDetailsViewController.m4300885448#2276"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemDetailsViewController.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemDetailsViewController.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemDetailsViewController.o /Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803274.176406
+e286803274.245803
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemDetailsViewController.o
+x/Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.m286803274#286803274#0(0"0(0#0#68"/Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.m4300885448#2096"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemDetailsViewController.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListTableViewCell.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275505105.249555
@@ -2013,6 +2729,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@82"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewCell.m283351572#283351572#0(0"0(0#0#74"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewCell.m4300885448#2258"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewCell.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewCell.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewCell.o /Users/chris/Dropbox/Development/Todoist/ItemListViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803274.108338
+e286803274.184899
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewCell.o
+x/Users/chris/Dropbox/Development/Todoist/ItemListViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/chris/Dropbox/Development/Todoist/ItemListViewCell.m286803274#286803274#0(0"0(0#0#59"/Users/chris/Dropbox/Development/Todoist/ItemListViewCell.m4300885448#2078"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/ItemListViewCell.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewCell.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s283902508.188853
 e283902508.392443
@@ -2025,6 +2754,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@88"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewController.m283902508#283902508#0(0"0(0#0#80"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewController.m4300885448#2270"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ItemListViewController.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o /Users/chris/Dropbox/Development/Todoist/ItemListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.824124
+e286803273.960789
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o
+x/Users/chris/Dropbox/Development/Todoist/ItemListViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/chris/Dropbox/Development/Todoist/ItemListViewController.m286803273#286803273#0(0"0(0#0#65"/Users/chris/Dropbox/Development/Todoist/ItemListViewController.m4300885448#2090"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/ItemListViewController.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ItemListViewController.o /Users/chris/Dropbox/Development/TodoistTest/ItemListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275207150.933190
@@ -2052,6 +2794,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@91"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/LoadingItemsTableViewCell.m283351572#283351572#0(0"0(0#0#83"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/LoadingItemsTableViewCell.m4300885448#2276"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/LoadingItemsTableViewCell.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/LoadingItemsTableViewCell.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/LoadingItemsTableViewCell.o /Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803274.040530
+e286803274.108237
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/LoadingItemsTableViewCell.o
+x/Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.m286803274#286803274#0(0"0(0#0#68"/Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.m4300885448#2096"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/LoadingItemsTableViewCell.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s283351571.284740
 e283351571.361394
@@ -2064,6 +2819,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@86"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/NSObject+SBJSON.m283351571#283351571#0(0"0(0#0#78"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/NSObject+SBJSON.m4300885448#2261"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/NSObject+SBJSON.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o /Users/chris/Dropbox/Development/Todoist/JSON/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.025606
+e286803273.319977
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o
+x/Users/chris/Dropbox/Development/Todoist/JSON/NSObject+SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/chris/Dropbox/Development/Todoist/JSON/NSObject+SBJSON.m286803273#286803273#0(0"0(0#0#63"/Users/chris/Dropbox/Development/Todoist/JSON/NSObject+SBJSON.m4300885448#2081"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/JSON/NSObject+SBJSON.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSObject+SBJSON.o /Users/chris/Dropbox/Development/TodoistTest/JSON/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206728.485321
@@ -2091,6 +2859,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@86"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/NSString+SBJSON.m283351571#283351571#0(0"0(0#0#78"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/NSString+SBJSON.m4300885448#2261"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/NSString+SBJSON.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSString+SBJSON.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSString+SBJSON.o /Users/chris/Dropbox/Development/Todoist/JSON/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.269839
+e286803273.335732
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSString+SBJSON.o
+x/Users/chris/Dropbox/Development/Todoist/JSON/NSString+SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/chris/Dropbox/Development/Todoist/JSON/NSString+SBJSON.m286803273#286803273#0(0"0(0#0#63"/Users/chris/Dropbox/Development/Todoist/JSON/NSString+SBJSON.m4300885448#2081"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/JSON/NSString+SBJSON.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSString+SBJSON.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/NSString+SBJSON.o /Users/chris/Dropbox/Development/TodoistTest/JSON/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206728.492073
 e275206728.601506
@@ -2116,6 +2897,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@90"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ProjectItemTableViewCell.m283351571#283351572#0(0"0(0#0#82"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/ProjectItemTableViewCell.m4300885448#2274"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/ProjectItemTableViewCell.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ProjectItemTableViewCell.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ProjectItemTableViewCell.o /Users/chris/Dropbox/Development/Todoist/ProjectItemTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.547630
+e286803273.668900
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ProjectItemTableViewCell.o
+x/Users/chris/Dropbox/Development/Todoist/ProjectItemTableViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/chris/Dropbox/Development/Todoist/ProjectItemTableViewCell.m286803273#286803273#0(0"0(0#0#67"/Users/chris/Dropbox/Development/Todoist/ProjectItemTableViewCell.m4300885448#2094"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/ProjectItemTableViewCell.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ProjectItemTableViewCell.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/ProjectItemTableViewCell.o /Users/chris/Dropbox/Development/TodoistTest/ProjectItemTableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206729.028870
@@ -2143,6 +2937,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@78"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/RegexKitLite.m283351571#283351572#0(0"0(0#0#70"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/RegexKitLite.m4300885448#2250"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/RegexKitLite.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RegexKitLite.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RegexKitLite.o /Users/chris/Dropbox/Development/Todoist/RegexKitLite.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.669093
+e286803274.040423
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RegexKitLite.o
+x/Users/chris/Dropbox/Development/Todoist/RegexKitLite.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/chris/Dropbox/Development/Todoist/RegexKitLite.m286803273#286803274#0(0"0(0#0#55"/Users/chris/Dropbox/Development/Todoist/RegexKitLite.m4300885448#2070"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/RegexKitLite.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RegexKitLite.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RegexKitLite.o /Users/chris/Dropbox/Development/TodoistTest/RegexKitLite.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206729.172186
 e275206729.751266
@@ -2168,6 +2975,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@84"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/RootViewController.m283902487#283902488#0(0"0(0#0#76"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/RootViewController.m4300885448#2262"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/RootViewController.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RootViewController.o /Users/chris/Dropbox/Development/Todoist/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803272.884133
+e286803272.992111
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RootViewController.o
+x/Users/chris/Dropbox/Development/Todoist/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/chris/Dropbox/Development/Todoist/RootViewController.m286803272#286803272#0(0"0(0#0#61"/Users/chris/Dropbox/Development/Todoist/RootViewController.m4300885448#2082"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/RootViewController.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RootViewController.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/RootViewController.o /Users/chris/Dropbox/Development/TodoistTest/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275207001.666960
@@ -2197,6 +3017,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJSON.m283351571#283351571#0(0"0(0#0#69"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJSON.m4300885448#2243"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJSON.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJSON.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJSON.o /Users/chris/Dropbox/Development/Todoist/JSON/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.320098
+e286803273.416796
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJSON.o
+x/Users/chris/Dropbox/Development/Todoist/JSON/SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/chris/Dropbox/Development/Todoist/JSON/SBJSON.m286803273#286803273#0(0"0(0#0#54"/Users/chris/Dropbox/Development/Todoist/JSON/SBJSON.m4300885448#2063"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/JSON/SBJSON.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJSON.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJSON.o /Users/chris/Dropbox/Development/TodoistTest/JSON/SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206728.585825
 e275206728.846656
@@ -2222,6 +3055,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@81"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonBase.m283351571#283351571#0(0"0(0#0#73"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonBase.m4300885448#2251"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonBase.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonBase.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonBase.o /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.335839
+e286803273.398935
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonBase.o
+x/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonBase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonBase.m286803273#286803273#0(0"0(0#0#58"/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonBase.m4300885448#2071"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonBase.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonBase.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonBase.o /Users/chris/Dropbox/Development/TodoistTest/JSON/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206728.601619
@@ -2249,6 +3095,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@83"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonParser.m283351571#283351571#0(0"0(0#0#75"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonParser.m4300885448#2255"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonParser.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonParser.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonParser.o /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.399045
+e286803273.547523
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonParser.o
+x/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonParser.m286803273#286803273#0(0"0(0#0#60"/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonParser.m4300885448#2075"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonParser.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonParser.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonParser.o /Users/chris/Dropbox/Development/TodoistTest/JSON/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206728.731660
 e275206729.028760
@@ -2275,6 +3134,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@83"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonWriter.m283351571#283351571#0(0"0(0#0#75"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonWriter.m4300885448#2255"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/JSON/SBJsonWriter.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonWriter.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonWriter.o /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.416895
+e286803273.526625
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonWriter.o
+x/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonWriter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonWriter.m286803273#286803273#0(0"0(0#0#60"/Users/chris/Dropbox/Development/Todoist/JSON/SBJsonWriter.m4300885448#2075"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/JSON/SBJsonWriter.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonWriter.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SBJsonWriter.o /Users/chris/Dropbox/Development/TodoistTest/JSON/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206728.846761
 e275206728.999983
@@ -2300,6 +3172,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@78"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/SplashScreen.m283351571#283351571#0(0"0(0#0#70"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/SplashScreen.m4300885448#2250"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/SplashScreen.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SplashScreen.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SplashScreen.o /Users/chris/Dropbox/Development/Todoist/SplashScreen.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803272.935344
+e286803273.025475
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SplashScreen.o
+x/Users/chris/Dropbox/Development/Todoist/SplashScreen.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/chris/Dropbox/Development/Todoist/SplashScreen.m286803272#286803273#0(0"0(0#0#55"/Users/chris/Dropbox/Development/Todoist/SplashScreen.m4300885448#2070"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/SplashScreen.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SplashScreen.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/SplashScreen.o /Users/chris/Dropbox/Development/TodoistTest/SplashScreen.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206728.246415
@@ -2340,6 +3225,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@84"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/TodoistAppDelegate.m283902487#283902487#0(0"0(0#0#76"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/TodoistAppDelegate.m4300885448#2262"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/TodoistAppDelegate.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/TodoistAppDelegate.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/TodoistAppDelegate.o /Users/chris/Dropbox/Development/Todoist/TodoistAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803272.818801
+e286803272.935238
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/TodoistAppDelegate.o
+x/Users/chris/Dropbox/Development/Todoist/TodoistAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/chris/Dropbox/Development/Todoist/TodoistAppDelegate.m286803272#286803272#0(0"0(0#0#61"/Users/chris/Dropbox/Development/Todoist/TodoistAppDelegate.m4300885448#2082"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/TodoistAppDelegate.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/TodoistAppDelegate.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/TodoistAppDelegate.o /Users/chris/Dropbox/Development/TodoistTest/TodoistAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206728.062911
 e275206728.348677
@@ -2365,6 +3263,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/UIColor+Hex.m283351571#283351571#0(0"0(0#0#69"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/UIColor+Hex.m4300885448#2248"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/UIColor+Hex.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/UIColor+Hex.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/UIColor+Hex.o /Users/chris/Dropbox/Development/Todoist/UIColor+Hex.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.647332
+e286803273.728651
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/UIColor+Hex.o
+x/Users/chris/Dropbox/Development/Todoist/UIColor+Hex.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/chris/Dropbox/Development/Todoist/UIColor+Hex.m286803273#286803273#0(0"0(0#0#54"/Users/chris/Dropbox/Development/Todoist/UIColor+Hex.m4300885448#2068"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/UIColor+Hex.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/UIColor+Hex.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/UIColor+Hex.o /Users/chris/Dropbox/Development/TodoistTest/UIColor+Hex.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206729.120287
@@ -2392,6 +3303,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@84"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XActivityIndicator.m283351571#283351571#0(0"0(0#0#76"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/XActivityIndicator.m4300885448#2262"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XActivityIndicator.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XActivityIndicator.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XActivityIndicator.o /Users/chris/Dropbox/Development/Todoist/XActivityIndicator.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803272.992221
+e286803273.269724
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XActivityIndicator.o
+x/Users/chris/Dropbox/Development/Todoist/XActivityIndicator.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/chris/Dropbox/Development/Todoist/XActivityIndicator.m286803272#286803273#0(0"0(0#0#61"/Users/chris/Dropbox/Development/Todoist/XActivityIndicator.m4300885448#2082"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/XActivityIndicator.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XActivityIndicator.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XActivityIndicator.o /Users/chris/Dropbox/Development/TodoistTest/XActivityIndicator.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206728.348789
 e275206728.491955
@@ -2417,6 +3341,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@84"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XConnectionHandler.m283874864#283874865#0(0"0(0#0#76"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/XConnectionHandler.m4300885448#2262"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XConnectionHandler.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XConnectionHandler.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XConnectionHandler.o /Users/chris/Dropbox/Development/Todoist/XConnectionHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.728765
+e286803273.824017
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XConnectionHandler.o
+x/Users/chris/Dropbox/Development/Todoist/XConnectionHandler.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/chris/Dropbox/Development/Todoist/XConnectionHandler.m286803273#286803273#0(0"0(0#0#61"/Users/chris/Dropbox/Development/Todoist/XConnectionHandler.m4300885448#2082"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/XConnectionHandler.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XConnectionHandler.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XConnectionHandler.o /Users/chris/Dropbox/Development/TodoistTest/XConnectionHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206729.292261
@@ -2444,6 +3381,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XDataEngine.m283902488#283902488#0(0"0(0#0#69"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/XDataEngine.m4300885448#2248"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XDataEngine.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XDataEngine.o0#
 
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XDataEngine.o /Users/chris/Dropbox/Development/Todoist/XDataEngine.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.960891
+e286803274.176292
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XDataEngine.o
+x/Users/chris/Dropbox/Development/Todoist/XDataEngine.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Users/chris/Dropbox/Development/Todoist/XDataEngine.m286803273#286803274#0(0"0(0#0#54"/Users/chris/Dropbox/Development/Todoist/XDataEngine.m4300885448#2068"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/XDataEngine.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XDataEngine.o0#
+
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XTableViewCellBase.o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XTableViewCellBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s283351571.695187
 e283351571.795750
@@ -2456,6 +3406,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@84"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XTableViewCellBase.m283351571#283351571#0(0"0(0#0#76"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/XTableViewCellBase.m4300885448#2262"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/XTableViewCellBase.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XTableViewCellBase.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XTableViewCellBase.o /Users/chris/Dropbox/Development/Todoist/XTableViewCellBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803273.526735
+e286803273.647216
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XTableViewCellBase.o
+x/Users/chris/Dropbox/Development/Todoist/XTableViewCellBase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/chris/Dropbox/Development/Todoist/XTableViewCellBase.m286803273#286803273#0(0"0(0#0#61"/Users/chris/Dropbox/Development/Todoist/XTableViewCellBase.m4300885448#2082"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/XTableViewCellBase.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XTableViewCellBase.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/XTableViewCellBase.o /Users/chris/Dropbox/Development/TodoistTest/XTableViewCellBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206729.000099
@@ -2482,6 +3445,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@70"Compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/main.m283351570#283351570#0(0"0(0#0#62"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/main.m4300885448#2234"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-fsjagvphkycgyvbuedxfnctvujsr/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/main.m -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/main.o0#
+
+CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/main.o /Users/chris/Dropbox/Development/Todoist/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803272.148912
+e286803272.715728
+r1
+xCompileC
+xbuild/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/main.o
+x/Users/chris/Dropbox/Development/Todoist/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/chris/Dropbox/Development/Todoist/main.m286803272#286803272#0(0"0(0#0#47"/Users/chris/Dropbox/Development/Todoist/main.m4300885448#2054"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -include /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch -c /Users/chris/Dropbox/Development/Todoist/main.m -o /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/main.o0#
 
 CCompileC build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/main.o /Users/chris/Dropbox/Development/TodoistTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s275206727.788347
@@ -2546,6 +3522,21 @@ r1
 xCompileXIB
 x/Users/chris/Dropbox/Development/Todoist-PreGetRequests/SplashScreen.xib
 lSLF07#2@27"CompileXIB SplashScreen.xib283351565#283351566#0(0"0(0#0#72"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/SplashScreen.xib4300885448#599"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/SplashScreen.nib /Users/chris/Dropbox/Development/Todoist-PreGetRequests/SplashScreen.xib0#
+
+CCompileXIB /Users/chris/Dropbox/Development/Todoist/ItemDetailsViewController.xib
+r0
+
+CCompileXIB /Users/chris/Dropbox/Development/Todoist/ItemListViewCell.xib
+r0
+
+CCompileXIB /Users/chris/Dropbox/Development/Todoist/LoadingItemsTableViewCell.xib
+r0
+
+CCompileXIB /Users/chris/Dropbox/Development/Todoist/MainWindow.xib
+r0
+
+CCompileXIB /Users/chris/Dropbox/Development/Todoist/SplashScreen.xib
+r0
 
 CCompileXIB /Users/chris/Dropbox/Development/TodoistTest/MainWindow.xib
 s274893859.884127
@@ -2663,6 +3654,15 @@ x/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimul
 x/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/Todoist
 lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/Todoist.app.dSYM build/Debug-iphonesimulator/Todoist.app/Todoist283902508#283902508#0(0"0(0#0#103"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/Todoist4300885448#496"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/Todoist -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app.dSYM0#
 
+CGenerateDSYMFile /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app.dSYM /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist
+s286803277.268826
+e286803278.624053
+r1
+xGenerateDSYMFile
+x/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app.dSYM
+x/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist
+lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/Todoist.app.dSYM build/Debug-iphonesimulator/Todoist.app/Todoist286803277#286803278#0(0"0(0#0#88"/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist4300885448#451"    cd /Users/chris/Dropbox/Development/Todoist    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist -o /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app.dSYM0#
+
 CGenerateDSYMFile /Users/chris/Dropbox/Development/TodoistTest/build/Debug-iphonesimulator/Todoist.app.dSYM /Users/chris/Dropbox/Development/TodoistTest/build/Debug-iphonesimulator/Todoist.app/Todoist
 s275207151.329080
 e275207151.377211
@@ -2681,6 +3681,16 @@ x/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimul
 xnormal
 xi386
 lSLF07#2@108"Link /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/Todoist283902508#283902508#0(0"0(0#0#0"4300885448#1137"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -L/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -filelist /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/Todoist.LinkFileList -mmacosx-version-min=10.5 -licucore -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/Todoist0#
+
+CLd /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist normal i386
+s286803274.245910
+e286803277.268617
+r1
+xLd
+x/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist
+xnormal
+xi386
+lSLF07#2@93"Link /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist286803274#286803277#0(0"0(0#0#0"4300885448#1047"    cd /Users/chris/Dropbox/Development/Todoist    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -L/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -filelist /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Objects-normal/i386/Todoist.LinkFileList -mmacosx-version-min=10.5 -licucore -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Todoist0#
 
 CLd /Users/chris/Dropbox/Development/TodoistTest/build/Debug-iphonesimulator/Todoist.app/Todoist normal i386
 s275207151.213807
@@ -2701,6 +3711,9 @@ x/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimul
 xTodoist-Info.plist
 lSLF07#2@26"Process Todoist-Info.plist283351565#283351565#0(0"0(0#0#74"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/Todoist-Info.plist4300885448#592"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Todoist-Info.plist -genpkginfo /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app/Info.plist0#
 
+CProcessInfoPlistFile /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app/Info.plist Todoist-Info.plist
+r0
+
 CProcessInfoPlistFile /Users/chris/Dropbox/Development/TodoistTest/build/Debug-iphonesimulator/Todoist.app/Info.plist Todoist-Info.plist
 s274893859.803712
 e274893859.884024
@@ -2709,6 +3722,19 @@ xProcessInfoPlistFile
 x/Users/chris/Dropbox/Development/TodoistTest/build/Debug-iphonesimulator/Todoist.app/Info.plist
 xTodoist-Info.plist
 lSLF07#2@26"Process Todoist-Info.plist274893859#274893859#0(0"0(0#0#63"/Users/chris/Dropbox/Development/TodoistTest/Todoist-Info.plist13229753409208424#559"    cd /Users/chris/Dropbox/Development/TodoistTest    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility Todoist-Info.plist -genpkginfo /Users/chris/Dropbox/Development/TodoistTest/build/Debug-iphonesimulator/Todoist.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/chris/Dropbox/Development/TodoistTest/build/Debug-iphonesimulator/Todoist.app/Info.plist0#
+
+CProcessPCH /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-bgfbwwvbxorsitdnxequutzddary/Todoist_Prefix.pch.gch Todoist_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s286057932.837560
+e286057934.089187
+r1
+xProcessPCH
+x/var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-bgfbwwvbxorsitdnxequutzddary/Todoist_Prefix.pch.gch
+xTodoist_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Todoist_Prefix.pch286057932#286057934#0(0"0(0#0#59"/Users/chris/Dropbox/Development/Todoist/Todoist_Prefix.pch4300885448#1944"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -c /Users/chris/Dropbox/Development/Todoist/Todoist_Prefix.pch -o /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-bgfbwwvbxorsitdnxequutzddary/Todoist_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-calsnpquszplavfppizxgzgiibqa/Todoist_Prefix.pch.gch Todoist_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s275346537.791572
@@ -2775,6 +3801,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@29"Precompile Todoist_Prefix.pch275901853#275901856#0(0"0(0#0#74"/Users/chris/Dropbox/Development/Todoist-PreGetRequests/Todoist_Prefix.pch4300882208#2107"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist-PreGetRequests/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/Todoist_Prefix.pch -o /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-eqrsoobmpjdilwboityyxwgmwvon/Todoist_Prefix.pch.gch0#
 
+CProcessPCH /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch.gch Todoist_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s286803266.073210
+e286803272.148609
+r1
+xProcessPCH
+x/var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch.gch
+xTodoist_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Todoist_Prefix.pch286803266#286803272#0(0"0(0#0#59"/Users/chris/Dropbox/Development/Todoist/Todoist_Prefix.pch8022089009140687872#1944"    cd /Users/chris/Dropbox/Development/Todoist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-generated-files.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-own-target-headers.hmap -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-all-target-headers.hmap -iquote /Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/Todoist-project-headers.hmap -F/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator -F/Users/chris/Dropbox/Development/Todoist/../../../Library/Frameworks -F/Developer/Local/Frameworks -I/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/include -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources/i386 -I/Users/chris/Dropbox/Development/Todoist/build/Todoist.build/Debug-iphonesimulator/Todoist.build/DerivedSources -DDEBUG=1 -c /Users/chris/Dropbox/Development/Todoist/Todoist_Prefix.pch -o /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-ertosgapanxuzycgijfmidkpypsi/Todoist_Prefix.pch.gch0#
+
 CProcessPCH /var/folders/v1/v1KmvV+aERqYmheMykGMnU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Todoist_Prefix-frtqgkiymgqxphgqcyfknyphqmpt/Todoist_Prefix.pch.gch Todoist_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
 
@@ -2811,6 +3850,14 @@ r1
 xTouch
 x/Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app
 lSLF07#2@101"Touch /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app283902508#283902508#0(0"0(0#0#0"4300885448#374"    cd /Users/chris/Dropbox/Development/Todoist-PreGetRequests    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/chris/Dropbox/Development/Todoist-PreGetRequests/build/Debug-iphonesimulator/Todoist.app0#
+
+CTouch /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app
+s286803278.624159
+e286803278.813805
+r1
+xTouch
+x/Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app
+lSLF07#2@86"Touch /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app286803278#286803278#0(0"0(0#0#0"4300885448#344"    cd /Users/chris/Dropbox/Development/Todoist    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/chris/Dropbox/Development/Todoist/build/Debug-iphonesimulator/Todoist.app0#
 
 CTouch /Users/chris/Dropbox/Development/TodoistTest/build/Debug-iphonesimulator/Todoist.app
 s275207151.377415

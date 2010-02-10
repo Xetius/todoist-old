@@ -14,11 +14,13 @@
 	UIColor*	color;
 	int			count;
 	int			indent;
+	bool		editing;
 }
 
 @property (retain) NSString* content;
 @property (retain) UIColor* color;
 @property (assign) int count;
 @property (assign) int indent;
+@property (assign) bool editing;
 
 @end

@@ -17,4 +17,6 @@
 
 @property (assign) long projectId;
 
+- (IBAction) EditTable:(id)sender;
+
 @end

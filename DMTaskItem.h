@@ -16,7 +16,7 @@
 	int		  priority;
 	int		  indent;
 	NSArray*  labels;
-	NSString* display_date;
+	NSDate*   due_date;
 	NSString* entered_date;
 	int		  type;
 }
@@ -26,7 +26,7 @@
 @property (assign) int priority;
 @property (retain) NSString* content;
 @property (retain) NSArray*  labels;
-@property (retain) NSString* display_date;
+@property (retain) NSDate*   due_date;
 @property (retain) NSString* entered_date;
 @property (assign) int type;
 

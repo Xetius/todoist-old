@@ -21,11 +21,12 @@
 @implementation RootViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.title = @"Projects";
-	self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+	// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -79,8 +80,7 @@
 		
 		ProjectItemTableViewCell* cell = (ProjectItemTableViewCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 		if (cell == nil) {
-			cell = [[[ProjectItemTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
-			cell.frame = CGRectMake(0.0, 0.0, 320.0, ROW_HEIGHT - 1);
+			cell = [[[ProjectItemTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier] autorelease];
 		}
 		
 		// Configure the cell.
@@ -90,7 +90,8 @@
 		cell.count = projectItem.cache_count;
 		cell.color = [UIColor colorForHex:projectItem.color];
 		cell.indent = projectItem.indent;
-
+		cell.editing = self.editing;
+		
 		return cell;
 	}
 	else {

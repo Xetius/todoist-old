@@ -18,7 +18,7 @@
 @synthesize content;
 @synthesize priority;
 @synthesize labels;
-@synthesize display_date;
+@synthesize due_date;
 @synthesize entered_date;
 @synthesize type;
 
@@ -35,6 +35,8 @@
 
 -(NSString*) labelStringWithDelegate:(NSObject<XDataEngineDelegate>*) delegate
 {
+	NSMutableString* label = [NSMutableString stringWithCapacity:0];
+	
 	XDataEngine* engine = [(TodoistAppDelegate*)[[UIApplication sharedApplication] delegate] engine];
 	if (labels != nil) 
 	{
@@ -49,12 +51,22 @@
 			
 			while ((labelId = [e nextObject])) 
 			{
-				NSLog(@"label : %@", [labelList objectForKey:labelId]);		
+				NSString* labelText = [[labelList objectForKey:labelId] name];
+				DLog (@"Label Text : %@", labelText);
+				if ([label length] == 0) {
+					DLog (@"empty label text");
+					[label appendString:labelText];
+				}
+				else {
+					DLog (@"not empty label text");
+					[label appendFormat:@", %@", labelText];
+				}
+
 			}
-			
 		}
 	}
-	return @"My Labels";
+
+	return [label retain];
 }
 
 @end

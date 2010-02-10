@@ -19,7 +19,7 @@
 
 - (id)initWithStyle:(UITableViewStyle)style {
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:style]) {
+    if (self = [super initWithStyle:style]) {		
 	}
     return self;
 }
@@ -29,6 +29,12 @@
     [super didReceiveMemoryWarning];
 	
 	// Release any cached data, images, etc that aren't in use.
+}
+
+-(void)viewDidLoad {
+	[super viewDidLoad];
+	UIBarButtonItem* editButton = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStyleBordered target:self action:@selector(EditTable:)];
+	[self.navigationItem setRightBarButtonItem:editButton];
 }
 
 - (void)viewDidUnload {
@@ -86,7 +92,13 @@
 		DMTaskItem* item = [[items objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
 		[cell setContentText:[item content]];
 		[cell setLabelsText:[item labelStringWithDelegate:self]];
-		[cell setDatesText:@"date here"];
+		NSString* dateString = @"-";
+		if ([item due_date] != nil) {
+			NSDateFormatter* df = [[[NSDateFormatter alloc] init] autorelease];
+			[df setDateFormat:@"dd-MM-yyyy"];
+			dateString = [df stringFromDate:[item due_date]];
+		}
+		[cell setDatesText:dateString];
 		return cell;
 	}
 	else {
@@ -123,7 +135,13 @@
 		[[self navigationController] pushViewController:viewController animated:YES];
 
 		viewController.contentField.text = item.content;
-		viewController.dateField.text = item.display_date;
+		NSString* dateString = @"-";
+		if ([item due_date] != nil) {
+			NSDateFormatter* df = [[[NSDateFormatter alloc] init] autorelease];
+			[df setDateFormat:@"EEE dd-MM-yyyy HH:mm:ss"];
+			dateString = [df stringFromDate:[item due_date]];
+		}		
+		viewController.dateField.text = dateString;
 		viewController.labelsField.text = [item labelStringWithDelegate:self];
 		viewController.priorityControl.selectedSegmentIndex = item.priority;	
 	}
@@ -146,4 +164,22 @@
 	return [UIColor	blackColor];
 }
 
+- (IBAction) EditTable:(id)sender{
+	if(self.editing)
+	{
+		[super setEditing:NO animated:NO];
+//		[tblSimpleTable setEditing:NO animated:NO];
+//		[tblSimpleTable reloadData];
+		[self.navigationItem.leftBarButtonItem setTitle:@"Edit"];
+		[self.navigationItem.leftBarButtonItem setStyle:UIBarButtonItemStylePlain];
+	}
+	else
+	{
+		[super setEditing:YES animated:YES];
+//		[tblSimpleTable setEditing:YES animated:YES];
+//		[tblSimpleTable reloadData];
+		[self.navigationItem.leftBarButtonItem setTitle:@"Done"];
+		[self.navigationItem.leftBarButtonItem setStyle:UIBarButtonItemStyleDone];
+	}
+}
 @end

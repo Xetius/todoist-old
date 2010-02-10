@@ -432,7 +432,7 @@
 				OTHER_CFLAGS = "-DDEBUG=1";
 				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = Todoist;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EBDDD67E-8AB8-419B-9F81-A45A525836AD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FB0116F2-38F9-4AF4-B2AF-BF84BF15BABF";
 			};
 			name = Debug;
 		};
@@ -441,6 +441,7 @@
 			buildSettings = {
 				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Hudson (F4BD9BRRPV)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +453,7 @@
 				INFOPLIST_FILE = "Todoist-Info.plist";
 				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = Todoist;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FB0116F2-38F9-4AF4-B2AF-BF84BF15BABF";
 			};
 			name = Release;
 		};
@@ -459,13 +461,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Hudson (F4BD9BRRPV)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-licucore";
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FB0116F2-38F9-4AF4-B2AF-BF84BF15BABF";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;
@@ -474,12 +476,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Hudson (F4BD9BRRPV)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-licucore";
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FB0116F2-38F9-4AF4-B2AF-BF84BF15BABF";
 				SDKROOT = iphoneos3.1.2;
 			};
 			name = Release;

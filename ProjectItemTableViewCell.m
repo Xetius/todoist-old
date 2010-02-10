@@ -15,12 +15,7 @@
 @synthesize count;
 @synthesize color;
 @synthesize indent;
-
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-    }
-    return self;
-}
+@synthesize editing;
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
 
@@ -55,7 +50,23 @@
 	[self setNeedsDisplay];
 }
 
+- (void)layoutSubviews
+{
+	CGRect b = [self bounds];
+	NSLog(@"layoutSubviews rect-x:%.2f,y:%.2f,w:%.2f,h:%.2f", b.origin.x, b.origin.y, b.size.width, b.size.height);
+	b.size.height -= 1; // leave room for the separator line
+	//b.size.width += 30; // allow extra width to slide for editing
+	b.origin.x -= (self.editing && !self.showingDeleteConfirmation) ? 0 : 30; // start 30px left unless editing
+	[contentView setFrame:b];
+    [super layoutSubviews];
+}
+
 - (void)drawContentView:(CGRect) r {
+	
+	NSLog(@"drawContentView rect-x:%.2f,y:%.2f,w:%.2f,h:%.2f", r.origin.x, r.origin.y, r.size.width, r.size.height);
+	CGRect r2 = [self bounds];
+	DLog(@"drawContentView bounds-x:%.2f,y:%.2f,w:%.2f,h:%.2f", r2.origin.x, r2.origin.y, r2.size.width, r2.size.height);
+	
 	// subclasses must implement this
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	UIColor* backgroundColor	= [UIColor colorForHex:@"FFFEFF"];
